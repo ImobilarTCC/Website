@@ -1,0 +1,108 @@
+@font-face{
+    src: url(../fonts/raleway.ttf);
+    font-family: 'raleway';
+}
+body{
+background-image: url(img/Sign\ in\ Page.png);
+background-repeat: no-repeat;
+    background-size: 100vmax;
+
+}
+.embrulho{
+    height: 100%;
+    width: 70%;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.img_logo{
+   position:absolute;
+    left: 0;
+   width: 50%;
+   height: 100%;
+}
+.cadastro{
+    position:absolute;
+    left: 0;
+    width: 50%;
+    height: 100%;
+}
+.titulo{
+  font-size: 3.5rem;
+  text-align: center;
+  color: #154360;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'raleway';
+    right: 0;
+}
+input{
+    background-color: #efefef;
+    border: 2px solid #707070;
+    height:50px;
+   width: 100%;
+   margin: 15px 0;
+   font-size: 1.3rem;
+   border-radius: 10px;
+   padding-right: 10px;
+}
+.user{
+    background-image: url(img/user.png);
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position: 10px 6px;
+    padding-left: 55px ;
+}
+.email{
+    background-image: url(img/email.png);
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: 10px 12px;
+    padding-left: 55px ;
+}
+.senha{
+    background-image: url(img/password.png);
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position: 13px 5px;
+    padding-left: 55px ;
+}
+a{
+    align-self:flex-end;
+    color: #c0392b;
+}
+a:hover{
+    cursor: pointer;
+}
+.botao{
+    border: 2px solid white;
+    padding: 1%;
+    margin-top: 70px;
+    background-color:#154360;
+    font-size: 1.8rem;
+    border-radius: 43px;
+    width: 70%;
+    height: 10%;
+    color: white;
+   align-self: center;
+   font-weight: 500;
+   text-align: center;
+}
+.botao:hover{
+    background-color: #c0392b;
+    cursor: pointer;
+}
+p{
+    text-align: center;
+}
+.img_cadastro{
+    height: auto;
+    width: 100px;
+    align-self: center;
+}
