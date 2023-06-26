@@ -1,0 +1,47 @@
+@font-face{
+    src: url(fonts/raleway.ttf);
+    font-family: 'raleway';
+}
+body{
+    background-image: url(img/bg.png);
+    background-repeat: no-repeat;
+    background-size: 100vmax;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: 'raleway';
+}
+
+.logo img{
+    margin-top: 25px;
+    width: 300px;
+    height: auto;
+    
+}
+.font1{
+    word-spacing: 25px;
+    margin-top: 200px;
+    font-size: 5rem;
+    color:white ;
+    margin-bottom: 25px;
+}
+p{
+    font-size: 1.9rem;
+    color: white;
+}
+.botao{
+    border: 2px solid white;
+    padding: 1%;
+    margin-top: 25px;
+    background-color: rgba(0, 0, 0, 0.3);
+    font-size: 2rem;
+    color: white;
+}
+.botao:hover{
+    border: 2px solid #C0392B;
+    background-color: #C0392B;
+    cursor: pointer;
+}
+
