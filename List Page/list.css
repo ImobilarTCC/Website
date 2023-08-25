@@ -2,6 +2,7 @@ main{
     width: 100%;
     display: flex;
     gap: 3%;
+    margin-bottom: 50px;
 }
 .filtro{
     width: fit-content;
@@ -180,7 +181,6 @@ input::-webkit-inner-spin-button {
         flex-wrap: wrap;
         gap: 15px;
         justify-content: center;
-        border: 1px solid red;
     }
     .item_lista{
         flex-direction: column;
@@ -188,7 +188,6 @@ input::-webkit-inner-spin-button {
         height: fit-content;
     }
     .item_lista .casa_img{ 
-        border: 1px solid blue;
         width: 100%;
         height: 200px;
         border-top-right-radius: 10px;
@@ -197,7 +196,6 @@ input::-webkit-inner-spin-button {
     .casa_info{
         width: 100%;
         height: 100%;
-        border: 1px solid blue;
     }
     .casa_info p{
         font-size: 1.4rem;
