@@ -173,6 +173,9 @@ input::-webkit-inner-spin-button {
 
 /* Break Points: 600px 601px 768px 992px 1200px */
 @media screen and (max-width: 991px) {
+    header{
+        display: none;
+    }
     .filtro{
         display: none;
     }
