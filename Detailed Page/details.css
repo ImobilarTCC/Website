@@ -1,0 +1,147 @@
+header ul li{
+    border-bottom: 2px solid transparent;
+}
+.embrulho{
+    gap: 0 15px;
+    margin-bottom: 40px;
+}
+.detalhes1{
+    width: 65%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 1.1rem;
+}
+.detalhes1_img{
+    width: 100%;
+    height: 70vh;
+    border: 2px solid #154360;
+    background-image: url(img/minecraft.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+.detalhes1_vendedor{
+    width: 100%;
+    height: fit-content;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.1);
+}
+.detalhes1_vendedor h1{
+    color: #154360;
+    width: 100%;
+    height: fit-content;
+    font-size: 1.6rem;
+    padding: 10px;
+}
+.detalhes1_vendedor_contato{
+    width: 100%;
+    height: fit-content;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 0;
+    border-top: 2px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  
+}
+.detalhes1_vendedor_contato img, .detalhes1_vendedor_comentario img{
+    width: 15px;
+    height: auto;
+    margin-right: 5px;
+}
+.detalhes1_vendedor_contato span, .detalhes1_vendedor_comentario span{
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+.detalhes1_vendedor_comentario{
+    width: 100%;
+    height: fit-content;
+    padding: 10px; 
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.detalhes1_vendedor_comentario p{
+    border: 2px solid #154360;
+    border-radius: 5px;
+    padding: 10px 15px;
+    width: 100%;
+    height: fit-content;
+    word-wrap: normal;
+    font-size: 1.1rem;
+    line-height: 25px;
+    color: rgba(0, 0, 0, 0.9);
+}
+.detalhes2{
+    width: 35%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.1); 
+    display: flex;
+    flex-direction: column;
+    font-size: 1.1rem;
+}
+.detalhes2 img{
+    width: 20px;
+    height: auto;
+    margin-right: 7px;
+}
+.detalhes2_preco{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    font-size: 1.5rem;
+}
+.detalhes2_info{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px 0;
+    border-top: 2px solid rgba(0, 0, 0, 0.1);
+}
+.detalhes2_info span{
+    color: #154360;
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+}
+.detalhes2_info p{
+    background-color: #F5F5F5;
+    border: 1px solid #d4d4d4;
+    border-radius: 7px;
+    padding: 5px;
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.6);
+    line-height: 25px;
+}
+.extras{
+    display: flex;
+    flex-direction: column;
+    gap: 5px 0;
+    margin: 7px 10px;
+}
+.extras span{
+    color: #154360;
+    border: 2px solid #154360 ;
+    border-radius: 50px;
+    padding: 3px 7px;
+    width: fit-content;
+}
+.vagas{
+    display: flex;
+    flex-direction: column;
+    gap: 10px 0;
+}
+.vagas img{
+    width: 30px;
+    height: auto;
+}

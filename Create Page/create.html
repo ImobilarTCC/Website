@@ -4,12 +4,155 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="../header.css">
     <link rel="stylesheet" href="create.css">
-    <title>-</title>
+    <title>Publicar Moradia</title>
 </head>
 <body>
-    
+    <header>
+        <div class="embrulho_header">
+          <a href="../index.html"><img src="img/logoBlue.png" alt="logotipo" class="logo"></a>
+          <ul>
+              <li><a href="../List Page/list.html">INICIO</a></li>
+              <li><a href="../Favorite Page/favorite.html">FAVORITOS</a></li>
+              <li><a href="../My Houses Page/myHouses.html">MINHAS PUBLICAÇÕES</a></li>
+          </ul>
+          <div>
+            <a href="../Create Page/create.html"><img src="../header_img/plusBlue.png" alt="" class="adicionar"></a>
+            <a href=""><img src="../header_img/bell.png" alt="notificação" class="notificacao"></a>
+            <a href="../User Page/user.html"><img src="../header_img/pfp.png" alt="" class="perfil"></a>
+          </div>
+        </div>
+    </header>
+        <main class="embrulho">
+            <section class="criacao">
+                <div class="criacao_imgs">
+                    <div class="criacao_img"><button><img src="img/plus.png" alt=""></button></div>
+                </div>
+                <form action="" id="publicar">
+                    <div class="criacao_dados">
+                        <h2>DADOS</h2>
+
+                        <div class="input">
+                            <label for="nome">Nome:</label>
+                            <input type="text" name="" id="nome">
+                        </div>
+                        <div class="input">
+                            <label for="tipo">Tipo: </label>
+                            <select name="" id="tipo">
+                                <option value="none">- Selecionar -</option>
+                                <option value="casa">Casa</option>
+                                <option value="apartamento">Apartamento</option>
+                                <option value="kitnet">Kitnet</option>
+                                <option value="quarto">Quarto</option>
+                                <option value="quarto_compartilhado">Quarto Compartilhado</option>
+                                <option value="dormitorio">Dormitório</option>
+                                <option value="republica">Republica</option>
+                                <option value="pensao">Pensão</option>
+                            </select>
+                        </div>
+                        
+
+                        <div class="input-cep">
+                            <label for="cep">CEP:</label>
+                            <input type="number" name="" id="cep">
+                        </div>
+
+                        <div class="input">
+                            <label for="city">Cidade:</label>
+                            <input type="text" name="" id="city">
+                        </div>
+
+                        <div class="input">
+                            <label for="estado">Estado:</label>
+                            <input type="text" name="" id="estado">
+                        </div>
+
+                        <div class="input">
+                            <label for="tamanho">Tamanho:</label>
+                            <input type="number" name="" id="tamanho">
+                        </div>
+
+                        <div class="input">
+                            <label for="comodo">Comodos:</label>
+                            <input type="number" name="" id="comodo">
+                        </div>
+
+                        <div class="input">
+                            <input type="number" name="" id="opcao1">
+                            <select name="" id="opcao1">
+                                <option value="sala">Sala</option>
+                                <option value="banheiro">Banheiro</option>
+                                <option value="quarto">Quarto</option>
+                            </select>
+                        </div>
+
+                        <div class="input">
+                            <input type="number" name="" id="opcao2">
+                            <select name="" id="opcao2">
+                                <option value="sala">Sala</option>
+                                <option value="banheiro">Banheiro</option>
+                                <option value="quarto">Quarto</option>
+                            </select>
+                        </div>
+
+                        <div class="input">
+                            <input type="number" name="" id="opcao3">
+                            <select name="" id="opcao3">
+                                <option value="sala">Sala</option>
+                                <option value="banheiro">Banheiro</option>
+                                <option value="quarto">Quarto</option>
+                            </select>
+                        </div>
+
+                        <div class="input">
+                            <label for="vaga">Vagas:</label>
+                            <input type="number" name="" id="vaga"> 
+                        </div>
+
+                        <p>Possui:</p>
+                        <div class="extras">
+                            <input type="checkbox" name="" id="wifi">
+                            <label for="wifi"><img src="img/WifiSim.png" alt="">Wi-fi</label>
+                            <input type="checkbox" name="" id="refeicao">
+                            <label for="refeicao"><img src="img/refeicaoSim.png" alt="">Refeição</label>
+                            <input type="checkbox" name="" id="lazer">
+                            <label for="lazer"><img src="img/LazerSim.png" alt="">Área de Lazer</label>
+                            <input type="checkbox" name="" id="estacionamento">
+                            <label for="estacionamento"><img src="img/estacionamentoSim.png" alt="">Estacionamento</label>
+                            <input type="checkbox" name="" id="animais">
+                            <label for="animais"><img src="img/animalSim.png" alt="">Permite Animais</label>
+                        </div> 
+                            
+                        <div class="input-valor">
+                            <label for="valor">Valor:</label>
+                            <input type="number" name="" id="valor">
+                        </div>
+                       
+                    </div>
+                    <div class="criacao_contato">
+                        <h2>CONTATO</h2>
+                        <div class="input">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email">    
+                        </div>
+                        <div class="input">
+                            <label for="telefone">Telefone:</label>
+                            <input type="number" id="telefone">   
+                        </div>    
+                    </div>
+                    <div class="criacao_comentario">
+                        <label for="Comentario">Comentário:</label>
+                        <textarea name="" id="Comentario" cols="60" rows="10"></textarea>
+                    </div>
+                </form>
+                <button type="submit" class="submit" form="publicar">Publicar</button>
+            </section>
+        </main>    
 </body>
 <script src="create.js"></script>
 </html>
