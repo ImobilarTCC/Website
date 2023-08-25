@@ -1,0 +1,106 @@
+.user{
+    width: 100%;
+    height: fit-content;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom:5vh;
+}
+.user_pfp{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 30px 0;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+}
+.user_pfp_img_border{
+    width: 150px;
+    height:150px;
+    padding: 3px;
+    border-radius: 1000px;
+    border: 2px solid #154360;  
+}
+.user_pfp_img{
+    width: 100%;
+    height: 100%;
+    border-radius: 1000px;
+    background-image: url(img/pfp.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-origin: padding-box;
+}
+.user_pfp p{
+    font-size: 1.5rem;
+    color: rgba(0, 0, 0, 0.8);
+}
+.user_info{
+    display: flex;
+}
+.user_info img{
+    width: 22px;
+    height: auto;
+}
+.user_dados,.user_contato{
+    width: 50%;
+    padding: 10px 15px;
+    font-size: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+}
+.user_dados{
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+}
+.user_contato{
+    border-left: 1px solid rgba(0, 0, 0, 0.2);
+}
+.user_dados h2,.user_contato h2{
+    font-size: 1.5rem;
+    color: #154360;
+    font-weight: 900;
+}
+.user_dados span,.user_contato span{
+    font-weight: bold;
+    margin-right: 7px;
+}
+.user_dados p,.user_contato p{
+    display: flex;
+    align-items: center;
+}
+.user_dados img,.user_contato img{
+    margin-left: 10px;
+}
+.user_dados button{
+    color: white;
+    background-color: #154360;
+    padding: 7px 17px;
+    border-radius: 100px;
+    align-self: center;
+    width: fit-content;
+    margin: 10px 0;
+}
+.user_contato button{
+    width: fit-content;
+    background-color: #154360;
+    padding: 5px 40px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.user_contato button img{
+    width: 16px;
+    align-self: center;
+    margin: 0 auto;
+}
+.user_dados button:hover,.user_contato button:hover{
+    cursor: pointer;
+    transition: all 0.3s;
+    background-color: #c0392b;
+}

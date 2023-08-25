@@ -4,12 +4,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="../header.css">
     <link rel="stylesheet" href="../reset.css">
     <link rel="stylesheet" href="user.css">
-    <title>-</title>
+    <title>Usuario</title>
 </head>
 <body>
-    
+    <header>
+        <div class="embrulho_header">
+          <a href="../index.html"><img src="img/logoBlue.png" alt="logotipo" class="logo"></a>
+          <ul>
+              <li><a href="../List Page/list.html">INICIO</a></li>
+              <li><a href="../Favorite Page/favorite.html">FAVORITOS</a></li>
+              <li><a href="../My Houses Page/myHouses.html">MINHAS PUBLICAÇÕES</a></li>
+          </ul>
+          <div>
+            <a href="../Create Page/create.html"><img src="../header_img/plusBlue.png" alt="" class="adicionar"></a>
+            <a href=""><img src="../header_img/bell.png" alt="notificação" class="notificacao"></a>
+            <a href="../User Page/user.html"><img src="../header_img/pfp.png" alt="" class="perfil"></a>
+          </div>
+        </div>
+    </header>
+    <main class="embrulho">
+      <section class="user">
+        <div class="user_pfp">
+          <div class="user_pfp_img_border"><div class="user_pfp_img"></div></div>
+          <p>Jazzghost Barros</p>
+        </div>
+        <section class="user_info">
+          <div class="user_dados">
+            <h2>DADOS</h2>
+            <p> <span>Nome:</span>Juliano Barros<img src="img/edit.png" alt=""></p>
+            <p><span>Nome de Usuário:</span>Jazzghost <img src="img/edit.png" alt=""></p>
+            <p><span>Email:</span>jazzghost@gmail.com<img src="img/edit.png" alt=""></p>
+            <p><span>Senha:</span>****************<img src="img/show.jpg" alt=""></p>
+            <button>Deletar Conta</button>
+          </div>
+          <div class="user_contato">
+            <h2>MEIOS DE CONTATO</h2>
+            <p><span>Email:</span>jazzghost@gmail.com </p>
+            <p><span>Telefone:</span>(11) 91427-5108</p>
+            <button><img src="img/plus.png" alt=""></button>
+          </div>
+        </section>
+      </section>
+    </main>
 </body>
 <script src="user.js"></script>
 </html>

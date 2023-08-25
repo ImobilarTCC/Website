@@ -1,12 +1,11 @@
-@font-face{
-    src: url(../fonts/raleway.ttf);
-    font-family: 'raleway';
-}
 body{
-background-image: url(img/Sign\ Up\ Page.png);
-background-repeat: no-repeat;
-    background-size: 100vmax;
-
+    background-image: url(img/Sign\ Up\ Page.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Raleway', sans-serif;
 }
 .embrulho{
     height: 100%;
@@ -46,17 +45,17 @@ input{
     background-color: #efefef;
     border: 2px solid #707070;
     height:50px;
-   width: 100%;
-   margin: 15px 0;
-   font-size: 1.3rem;
-   border-radius: 10px;
-   padding-right: 10px;
+    width: 100%;
+    margin: 15px 0;
+    font-size: 1.3rem;
+    border-radius: 10px;
+    padding-right: 10px;
 }
-.email{
-    background-image: url(img/email.png);
+.data{
+    background-image: url(img/user.png);
     background-repeat: no-repeat;
-    background-size: 30px;
-    background-position: 10px 12px;
+    background-size: 25px;
+    background-position: 13px 7px;
     padding-left: 55px ;
 }
 .senha{
@@ -83,11 +82,12 @@ a:hover{
     width: 70%;
     height: 10%;
     color: white;
-   align-self: center;
-   font-weight: 500;
-   text-align: center;
+    align-self: center;
+    font-weight: 500;
+    text-align: center;
 }
 .botao:hover{
+    transition: all 0.2s;
     background-color: #c0392b;
     cursor: pointer;
 }
@@ -98,4 +98,12 @@ p{
     height: auto;
     width: 100px;
     align-self: center;
+}
+.cadastre-se,.esqueceu_senha{
+    border-bottom: 2px solid transparent;
+}
+.cadastre-se:hover,.esqueceu_senha:hover{
+    transition: all 0.2s;
+    cursor: pointer;
+    border-bottom: 2px solid #c0392b;
 }

@@ -1,17 +1,14 @@
-@font-face{
-    src: url(fonts/raleway.ttf);
-    font-family: 'raleway';
-}
 body{
     background-image: url(img/bg.png);
     background-repeat: no-repeat;
-    background-size: 100vmax;
+    background-size: cover;
+    background-position: center;
     width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: center;
     text-align: center;
-    font-family: 'raleway';
+    font-family: 'Raleway', sans-serif;
 }
 
 .logo img{
@@ -40,6 +37,7 @@ p{
     color: white;
 }
 .botao:hover{
+    transition: all 0.2s;
     border: 2px solid #C0392B;
     background-color: #C0392B;
     cursor: pointer;
