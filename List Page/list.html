@@ -1,15 +1,241 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="../header.css">
     <link rel="stylesheet" href="list.css">
-    <title>-</title>
+    <title>Lista De Moveis</title>
 </head>
+
 <body>
-    
+    <header>
+        <section class="embrulho_header">
+            <a href="../index.html"><img src="../header_img/logoBlue.png" alt="logotipo" class="logo"></a>
+            <ul>
+                <li><a href="list.html">INICIO</a></li>
+                <li><a href="../Favorite Page/favorite.html">FAVORITOS</a></li>
+                <li><a href="../My Houses Page/myHouses.html">MINHAS PUBLICAÇÕES</a></li>
+            </ul>
+            <div>
+                <a href="../Create Page/create.html"><img src="../header_img/plusBlue.png" alt="" class="adicionar"></a>
+                <a href=""><img src="../header_img/bell.png" alt="notificação" class="notificacao"></a>
+                <a href="../User Page/user.html"><img src="../header_img/pfp.png" alt="" class="perfil"></a>
+            </div>
+        </section>
+    </header>
+    <section class="embrulho">
+        <main>
+            <section class="filtro">
+                <h1>Filtrar por:</h1>
+                <form action="" class="filtro_form">
+
+                    <div class="filtro_endereco">
+                        <p>- Endereço -</p>
+
+                        <label for="endereco_input" class="label_endereco">CEP:</label>
+                        <input type="number" id="endereco_input" placeholder="00000-000">
+                        
+                        <label for="#" class="endereco-input">Cidade:</label>
+                        <select name="#" id="#" class="endereco-input">
+                            <option value="none" selected>-</option>
+                            <option value="Paraisopolis">Paraisópolis</option>
+                            <option value="Sao_Paulo">São Paulo</option>
+                        </select>
+                    
+                        <label for="#" class="endereco-input">Estado:</label>
+                        <select name="#" id="#" class="endereco-input">
+                            <option value="exemplo1" selected>-</option>
+                            <option value="Minas_Gerais">Minas Gerais</option>
+                            <option value="Sao_Paulo">São Paulo</option>
+                        </select>
+
+                    </div>
+
+                    <div class="filtro_categoria">
+                        <p>- Categoria -</p>
+                        <input type="checkbox" name="#" id="casa">
+                        <label for="casa">Casa</label>
+
+                        <input type="checkbox" name="#" id="apartamento">
+                        <label for="apartamento">Apartamento</label>
+                        
+                        <input type="checkbox" name="#" id="Kitnet">
+                        <label for="Kitnet">Kitnet</label>
+                        
+                        <input type="checkbox" name="#" id="República">
+                        <label for="República">República</label>
+                        
+                        <input type="checkbox" name="#" id="Quarto">
+                        <label for="Quarto">Quarto</label>
+                        
+                        <input type="checkbox" name="#" id="Quarto_Compartilhado">
+                        <label for="Quarto_Compartilhado">Quarto Compartilhado</label>
+                        
+                        <input type="checkbox" name="#" id="Dormitório">
+                        <label for="Dormitório">Dormitório</label>
+                        
+                        <input type="checkbox" name="#" id="Pensão">
+                        <label for="Pensão">Pensão</label>
+                    </div>
+
+                    <div class="filtro_preco">
+                        <p>- Preço -</p>
+
+                        <label for="preco_minimo" class="preco-input">Min:</label>
+                        <input type="number" id="preco_minimo" placeholder="R$00,00">
+            
+                        <label for="preco_maximo" class="preco-input">Max:</label>
+                        <input type="number" id="preco_maximo" placeholder="R$00,00">
+                    </div>
+
+                    <div class="filtro_interior">
+                        <p>- Vagas e Comodos -</p>
+
+                        <label for="vagas" class="vagas-input">N° de vagas:</label>
+                        <input type="number" id="vagas" placeholder="0">
+                        
+                        <label for="comodos" class="vagas-input">N° de cômodos:</label>
+                        <input type="number" id="comodos" placeholder="0">
+                    </div>
+
+                    <div class="filtro_extras">
+                        <p>- Possui -</p>
+
+                        <input type="checkbox" id="wi_fi">
+                        <label for="wi_fi"><img src="img/Wifi.png" alt="">Wi-Fi</label>
+                        
+                        <input type="checkbox" name="" id="refeicao">
+                        <label for="refeicao"><img src="img/refeicao.png" alt="">Refeição</label>
+                        
+                        <input type="checkbox" name="" id="lazer">
+                        <label for="lazer"><img src="img/Lazer.png" alt="">Área de Lazer</label>
+                        
+                        <input type="checkbox" name="" id="carro">
+                        <label for="carro"><img src="img/estacionamento.png" alt="">Estacionamento</label>
+                        
+                        <input type="checkbox" name="" id="animais">
+                        <label for="animais"><img src="img/animal.png" alt="">Permite Animais</label>
+                    </div>
+
+                </form>
+            </section>
+            <section class="moradias">
+
+                <section class="item_lista">
+                    <div class="casa_img"></div>
+                    <div class="casa_info">
+                        <p>CASA</p>
+                        <span><img src="img/localizar.png" alt="">Guarulhos, São Paulo</span>
+                        <span><img src="img/endereco.png" alt="">Av. Marechal Deodoro, Nº 450</span>
+                        <span><img src="img/comodos.png" alt="">7 comodos</span>
+                        <span><img src="img/user.png" alt="">2 vagas disponiveis</span>
+                        <span><img src="img/contato.png" alt="">(11) 93756-0304</span>
+                        <div class="casa_detalhes">
+                            <div class="casa_detalhes_extras">
+                                <img src="img/Wifi.png" alt="">
+                                <img src="img/refeicao.png" alt="">
+                                <img src="img/Lazer.png" alt="">
+                                <img src="img/estacionamento.png" alt="">
+                                <img src="img/animal.png" alt="">
+                            </div>
+                            <div class="casa_detalhes_preco">
+                                <span>R$500.000,00</span>
+                                <a href="../Detailed Page/details.html">Mais Detalhes</a>
+                            </div>
+                        </div>
+                        <img src="img/favorito.png" alt="" class="img_favorito">
+                    </div>
+                </section>
+
+                <section class="item_lista">
+                    <div class="casa_img"></div>
+                    <div class="casa_info">
+                        <p>CASA</p>
+                        <span><img src="img/localizar.png" alt="">Guarulhos, São Paulo</span>
+                        <span><img src="img/endereco.png" alt="">Av. Marechal Deodoro, Nº 450</span>
+                        <span><img src="img/comodos.png" alt="">7 comodos</span>
+                        <span><img src="img/user.png" alt="">2 vagas disponiveis</span>
+                        <span><img src="img/contato.png" alt="">(11) 93756-0304</span>
+                        <div class="casa_detalhes">
+                            <div class="casa_detalhes_extras">
+                                <img src="img/Wifi.png" alt="">
+                                <img src="img/refeicao.png" alt="">
+                                <img src="img/Lazer.png" alt="">
+                                <img src="img/estacionamento.png" alt="">
+                                <img src="img/animal.png" alt="">
+                            </div>
+                            <div class="casa_detalhes_preco">
+                                <span>R$500.000,00</span>
+                                <a href="../Detailed Page/details.html">Mais Detalhes</a>
+                            </div>
+                        </div>
+                        <img src="img/favorito.png" alt="" class="img_favorito">
+                    </div>
+                </section>
+
+                <section class="item_lista">
+                    <div class="casa_img"></div>
+                    <div class="casa_info">
+                        <p>CASA</p>
+                        <span><img src="img/localizar.png" alt="">Guarulhos, São Paulo</span>
+                        <span><img src="img/endereco.png" alt="">Av. Marechal Deodoro, Nº 450</span>
+                        <span><img src="img/comodos.png" alt="">7 comodos</span>
+                        <span><img src="img/user.png" alt="">2 vagas disponiveis</span>
+                        <span><img src="img/contato.png" alt="">(11) 93756-0304</span>
+                        <div class="casa_detalhes">
+                            <div class="casa_detalhes_extras">
+                                <img src="img/Wifi.png" alt="">
+                                <img src="img/refeicao.png" alt="">
+                                <img src="img/Lazer.png" alt="">
+                                <img src="img/estacionamento.png" alt="">
+                                <img src="img/animal.png" alt="">
+                            </div>
+                            <div class="casa_detalhes_preco">
+                                <span>R$500.000,00</span>
+                                <a href="../Detailed Page/details.html">Mais Detalhes</a>
+                            </div>
+                        </div>
+                        <img src="img/favorito.png" alt="" class="img_favorito">
+                    </div>
+                </section>
+
+                <section class="item_lista">
+                    <div class="casa_img"></div>
+                    <div class="casa_info">
+                        <p>CASA</p>
+                        <span><img src="img/localizar.png" alt="">Guarulhos, São Paulo</span>
+                        <span><img src="img/endereco.png" alt="">Av. Marechal Deodoro, Nº 450</span>
+                        <span><img src="img/comodos.png" alt="">7 comodos</span>
+                        <span><img src="img/user.png" alt="">2 vagas disponiveis</span>
+                        <span><img src="img/contato.png" alt="">(11) 93756-0304</span>
+                        <div class="casa_detalhes">
+                            <div class="casa_detalhes_extras">
+                                <img src="img/Wifi.png" alt="">
+                                <img src="img/refeicao.png" alt="">
+                                <img src="img/Lazer.png" alt="">
+                                <img src="img/estacionamento.png" alt="">
+                                <img src="img/animal.png" alt="">
+                            </div>
+                            <div class="casa_detalhes_preco">
+                                <span>R$500.000,00</span>
+                                <a href="../Detailed Page/details.html">Mais Detalhes</a>
+                            </div>
+                        </div>
+                        <img src="img/favorito.png" alt="" class="img_favorito">
+                    </div>
+                </section>
+
+            </section>
+        </main>
+    </section>
 </body>
 <script src="list.js"></script>
+
 </html>

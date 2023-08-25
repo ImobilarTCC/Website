@@ -1,12 +1,11 @@
-@font-face{
-    src: url(../fonts/raleway.ttf);
-    font-family: 'raleway';
-}
 body{
-background-image: url(img/Sign\ in\ Page.png);
-background-repeat: no-repeat;
-    background-size: 100vmax;
-
+    background-image: url(img/Sign\ in\ Page.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Raleway', sans-serif;
 }
 .embrulho{
     height: 100%;
@@ -95,8 +94,9 @@ a:hover{
    text-align: center;
 }
 .botao:hover{
-    background-color: #c0392b;
+    transition: all 0.2s;
     cursor: pointer;
+    background-color: #c0392b;
 }
 p{
     text-align: center;
@@ -105,4 +105,12 @@ p{
     height: auto;
     width: 100px;
     align-self: center;
+}
+.faca-login{
+    border: 2px solid transparent;
+}
+.faca-login:hover{
+    transition: all 0.2s;
+    cursor: pointer;
+    border-bottom: 2px solid #c0392b;
 }

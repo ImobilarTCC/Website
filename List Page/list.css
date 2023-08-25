@@ -1,0 +1,321 @@
+main{
+    width: 100%;
+    display: flex;
+    gap: 3%;
+}
+.filtro{
+    width: fit-content;
+    min-width: 25%;
+    height: fit-content;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.1);
+    font-size: 1.3rem;
+    padding: 5px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px 0;
+}
+.filtro h1{
+    font-size: 1.6rem;
+    color: #154360;
+    padding: 0 10px;
+}
+.filtro div{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-top: 2px solid rgba(21, 67, 96, 0.3);
+}
+.filtro_endereco,.filtro_preco,.filtro_interior{
+    gap: 3px;
+}
+.filtro p{
+    width: fit-content;
+    font-size: 1.4rem;
+    color: rgba(21, 67, 96, 0.8);
+    margin-bottom: 10px;
+}
+.filtro label{
+    font-size: 1.3rem;
+}
+.filtro_endereco .label_endereco{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.filtro input[type=text],.filtro input[type=number],.filtro select{
+    border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+    color: rgba(0, 0, 0, 0.65);
+    padding: 5px 0;
+    margin-bottom: 20px;
+}
+.filtro input[type=text]:focus,.filtro input[type=number]:focus,.filtro select:focus{
+    transition: all 0.2s;
+    animation: alternate;
+    border-bottom: 2px solid #c0392b;
+    color: rgba(0, 0, 0, 0.9);
+}
+.filtro_categoria,.filtro_extras{
+    gap: 1px;
+}
+.filtro_categoria label,.filtro_extras label{
+    width: fit-content;
+    border: 2px solid transparent;
+    border-radius: 100px;
+    padding: 5px 13px;
+}
+.filtro_categoria label:hover,.filtro_extras label:hover{
+    transition: all 0.3s;
+    cursor: pointer;
+    border: 2px solid #154360;
+    color: #154360;
+}
+.filtro_extras label{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.filtro_extras img{
+    width: 25px;
+    height: auto;
+}
+
+/* 2nd Half */
+.moradias{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+}
+.item_lista{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.1);
+}
+.casa_img{
+    min-width: 30%;
+    width: auto;
+    height: auto;
+    background-image: url(img/Sem\ título.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.casa_info{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 15px;
+    padding: 10px;
+}
+.casa_info span img{
+    width: 20px;
+    height: auto;
+}
+.casa_info span{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.casa_info span{
+    display: flex;
+    gap: 7px;
+}
+.casa_detalhes{
+    display: flex;
+    gap: 10px;
+}
+.casa_detalhes_extras{
+    width: fit-content;
+    height: fit-content;
+    align-self: flex-end;
+    display: flex;
+    gap: 7px;
+    margin: 2% 0;
+}
+.casa_detalhes_preco{
+    display: flex;
+    flex-direction: column;
+}
+.casa_detalhes_preco a{
+    width: fit-content;
+    height: fit-contents;
+    color: white;
+    background-color: #154360;
+    padding: 8px 12px;
+    border-radius: 100px;
+}
+.casa_detalhes_preco a:hover{
+    transition: all 0.2s;
+    background-color: #c0392b;
+    cursor: pointer;
+}
+.img_favorito{
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 10px 10px 0 0;
+    width: 20px;
+    height: auto;
+}
+
+/* Fix */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Break Points: 600px 601px 768px 992px 1200px */
+@media only screen and (max-width: 991px) {
+    .filtro{
+        display: none;
+    }
+    .moradias{
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
+        border: 1px solid red;
+    }
+    .item_lista{
+        flex-direction: column;
+        width: 48%;
+        height: 80vh;
+    }
+    .item_lista .casa_img{ 
+        border: 1px solid blue;
+        width: 100%;
+        height: 70%;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+    }
+    .casa_info{
+        width: 100%;
+        height: 100%;
+        border: 1px solid blue;
+    }
+    .casa_info p{
+        font-size: 1.4rem;
+    }
+    .casa_detalhes{
+        width: 100%;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+    .casa_detalhes_preco{
+        gap: 10px 0;
+    }
+    .casa_detalhes_preco span{ 
+        font-size: 1.2rem;
+    }
+    .casa_detalhes_extras img{
+        width: auto;
+        height: 20px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .item_lista{
+        width: 90%;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 765px) {
+    .casa_detalhes{
+        flex-direction: column
+    }
+    .casa_detalhes_extras{
+        align-self: flex-start;
+    }
+    .casa_info p{
+        font-size: 1.3rem;
+    }
+    .casa_info span{
+        font-size: 0.9rem;
+    }
+    .casa_detalhes_preco span{ 
+        font-size: 1.1rem;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .filtro{
+        display: none;
+    }
+    .moradias{
+        flex-direction: column;
+        gap: 15px 0;
+    }
+    .item_lista .casa_img{
+        border-bottom-left-radius: 10px;
+        border-top-left-radius: 10px;
+    }
+    .casa_info{
+        justify-content: center;
+    }
+    .casa_info p{
+        font-size: 1.5rem;
+    }
+    .casa_info span{
+        font-size: 1.1rem;
+    }
+    .casa_detalhes{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        margin: 0 10px 7px 0;
+    }
+    .casa_detalhes_preco{
+        gap: 7px;
+        align-items: center;
+    }
+    .casa_detalhes_preco span{ 
+        font-size: 1.3rem;
+    }
+    .casa_detalhes_extras img{
+        width: auto;
+        height: 22px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .moradias{
+        flex-direction: column;
+        gap: 15px;
+    }
+    .item_lista .casa_img{
+        border-bottom-left-radius: 10px;
+        border-top-left-radius: 10px;
+    }
+    .casa_info{
+        justify-content: center;
+    }
+    .casa_info p{
+        font-size: 1.5rem;
+    }
+    .casa_info span{
+        font-size: 1.1rem;
+    }
+    .casa_detalhes{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        margin: 0 10px 7px 0;
+    }
+    .casa_detalhes_preco{
+        gap: 7px;
+        align-items: center;
+    }
+    .casa_detalhes_preco span{ 
+        font-size: 1.3rem;
+    }
+    .casa_detalhes_extras img{
+        width: auto;
+        height: 22px;
+    }
+}
