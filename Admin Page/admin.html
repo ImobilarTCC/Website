@@ -15,22 +15,38 @@
 </head>
 
 <body>
-    <header>
-        <div class="embrulho_header">
-            <a href="../index.html"><img src="img/logoBlue.png" alt="logotipo" class="logo"></a>
-            <ul>
-                <li><a href="../List Page/list.html">INICIO</a></li>
-                <li><a href="../Favorite Page/favorite.html">FAVORITOS</a></li>
-                <li><a href="../My Houses Page/myHouses.html">MINHAS PUBLICAÇÕES</a></li>
-            </ul>
-            <div>
-                <a href="../Create Page/create.html"><img src="../header_img/plusBlue.png" alt="" class="adicionar"></a>
-                <a href=""><img src="../header_img/bell.png" alt="notificação" class="notificacao"></a>
-                <a href="../User Page/user.html"><img src="../header_img/pfp.png" alt="" class="perfil"></a>
+    <div class="mobile-menu-btn">
+        <img src="../header_img/burger-bar.png" alt="mobile-menu-btn">
+    </div>
+    <div class="mobile-menu-overlay"></div>
+    <header class="header-main">
+        <section class="header-wrapper">
+            <div class="header-logo">
+                <a href="../index.html"><img src="../header_img/logoBlue2.png" alt="logo"></a>
             </div>
-        </div>
+            <nav class="header-navigation">
+                <ul>
+                    <li><a href="../List Page/list.html">INICIO</a></li>
+                    <li><a href="../Favorite Page/favorite.html">FAVORITOS</a></li>
+                    <li><a href="../My Houses Page/myHouses.html">MINHAS PUBLICAÇÕES</a></li>
+                </ul>
+            </nav>
+            <div class="header-icons">
+                <div class="header-icons-addnotif">
+                    <div><a href="../Create Page/create.html"><img src="../header_img/plusBlue.png" alt="add icon"></a></div>
+                    <div><img src="../header_img/bell.png" alt="notification bell"></div>
+                </div>
+                <ul>
+                    <li><a href="../Sign In Page/register.html">CADASTRO</a></li>
+                    <li><a href="../Sign Up Page/login.html">LOGIN</a></li>
+                </ul>
+                <div class="header-pfp"><a href="../User Page/user.html"><img src="../header_img/pfp.png" alt="user pfp"></a></div>
+            </div>
+        </section>
     </header>
-    <main class="embrulho">
+    <script src="../header.js"></script>
+
+    <section class="wrapper">
         <section class="moradias">
             <div class="item_lista">
                 <div class="casa_img"></div>
