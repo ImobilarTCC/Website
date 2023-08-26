@@ -9,12 +9,12 @@ headerMobileBtn.onclick = function () {
     if (!menuOpen) {
         headerMain.style.display = "flex";
         headerMobileOverlay.style.display = "flex";
-        document.body.style.position = "fixed";
+        document.body.style.overflow = "hidden";
         menuOpen = true;
     } else {
         headerMain.style.display = "none";
         headerMobileOverlay.style.display = "none";
-        document.body.style.position = "unset";
+        document.body.style.overflow = "auto";
         menuOpen = false;
     }
 }
@@ -24,10 +24,10 @@ mediaQuery.addEventListener('change', function (e) {
     if (e.matches) {
         headerMain.style.display = "flex";
         headerMobileOverlay.style.display = "none";
-        document.body.style.position = "unset";
+        document.body.style.overflow = "auto";
     } else {
         headerMain.style.display = "none";
         headerMobileOverlay.style.display = "none";
-        document.body.style.position = "unset";
+        document.body.style.overflow = "auto";
     }
 });

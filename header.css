@@ -99,12 +99,6 @@ body{
 .header-logo a img:hover,.header-pfp img,.header-icons img{
     cursor: pointer;
 }
-
-.lock-scroll {
-    overflow: hidden;
-    height: 100%;
-}
-
 @media screen and (max-width: 992px) {
     .header-main,.mobile-menu-overlay{
         display: none;
@@ -143,8 +137,8 @@ body{
         background-color: rgba(0, 0, 0, 0.6);
     }
     .header-main{
-        width: 80vw;
-        height: 100vh;
+        width: 80%;
+        height: 100%;
         position: fixed;
         top: 0;
         right: 0;
