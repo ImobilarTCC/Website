@@ -99,6 +99,12 @@ body{
 .header-logo a img:hover,.header-pfp img,.header-icons img{
     cursor: pointer;
 }
+
+.lock-scroll {
+    overflow: hidden;
+    height: 100%;
+}
+
 @media screen and (max-width: 992px) {
     .header-main,.mobile-menu-overlay{
         display: none;
@@ -147,6 +153,8 @@ body{
         flex-direction: column;
         align-items: center;
         font-size: 1.4rem;
+        overflow-y: scroll;
+        overflow-x: hidden;
     }
     .header-wrapper{
         flex-direction: column;
