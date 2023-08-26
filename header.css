@@ -99,6 +99,7 @@ body{
 .header-logo a img:hover,.header-pfp img,.header-icons img{
     cursor: pointer;
 }
+
 @media screen and (max-width: 992px) {
     .header-main,.mobile-menu-overlay{
         display: none;
@@ -120,10 +121,12 @@ body{
         width: auto;
         height: 50px;
     }
-    .mobile-menu-btn:hover{
-        cursor: pointer;
-        transition: all 0.2s;
-        background-color: var(--redColor);
+    @media (hover: hover) {
+        .mobile-menu-btn:hover{
+            cursor: pointer;
+            transition: all 0.2s;
+            background-color: var(--redColor);
+        }
     }
     .mobile-menu-overlay{
         position: fixed;
