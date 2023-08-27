@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <div class="mobile-menu-btn">
+    <div class="mobile-menu-btn" onclick="toggleMenu()">
         <img src="../header_img/burger-bar.png" alt="mobile-menu-btn">
     </div>
     <div class="mobile-menu-overlay"></div>
@@ -52,93 +52,109 @@
                 <h1>Filtrar por:</h1>
                 <form action="" class="filtro_form">
 
-                    <div class="filtro_endereco">
-                        <p>- Endereço -</p>
+                    <section>
 
-                        <label for="endereco_input" class="label_endereco">CEP:</label>
-                        <input type="number" id="endereco_input" placeholder="00000-000">
-                        
-                        <label for="#" class="endereco-input">Cidade:</label>
-                        <select name="#" id="#" class="endereco-input">
-                            <option value="none" selected>-</option>
-                            <option value="Paraisopolis">Paraisópolis</option>
-                            <option value="Sao_Paulo">São Paulo</option>
-                        </select>
-                    
-                        <label for="#" class="endereco-input">Estado:</label>
-                        <select name="#" id="#" class="endereco-input">
-                            <option value="exemplo1" selected>-</option>
-                            <option value="Minas_Gerais">Minas Gerais</option>
-                            <option value="Sao_Paulo">São Paulo</option>
-                        </select>
+                        <p class="title_endereco">- Endereço -</p>
 
-                    </div>
+                        <div class="filtro_endereco">
+                            <label for="endereco_input" class="label_endereco">CEP:</label>
+                            <input type="number" id="endereco_input" placeholder="00000-000">
+                            
+                            <label for="#" class="endereco-input">Cidade:</label>
+                            <select name="#" id="#" class="endereco-input">
+                                <option value="none" selected>-</option>
+                                <option value="Paraisopolis">Paraisópolis</option>
+                                <option value="Sao_Paulo">São Paulo</option>
+                            </select>
+                        
+                            <label for="#" class="endereco-input">Estado:</label>
+                            <select name="#" id="#" class="endereco-input">
+                                <option value="exemplo1" selected>-</option>
+                                <option value="Minas_Gerais">Minas Gerais</option>
+                                <option value="Sao_Paulo">São Paulo</option>
+                            </select>
+                        </div>
 
-                    <div class="filtro_categoria">
-                        <p>- Categoria -</p>
-                        <input type="checkbox" name="#" id="casa">
-                        <label for="casa">Casa</label>
+                    </section>
 
-                        <input type="checkbox" name="#" id="apartamento">
-                        <label for="apartamento">Apartamento</label>
-                        
-                        <input type="checkbox" name="#" id="Kitnet">
-                        <label for="Kitnet">Kitnet</label>
-                        
-                        <input type="checkbox" name="#" id="República">
-                        <label for="República">República</label>
-                        
-                        <input type="checkbox" name="#" id="Quarto">
-                        <label for="Quarto">Quarto</label>
-                        
-                        <input type="checkbox" name="#" id="Quarto_Compartilhado">
-                        <label for="Quarto_Compartilhado">Quarto Compartilhado</label>
-                        
-                        <input type="checkbox" name="#" id="Dormitório">
-                        <label for="Dormitório">Dormitório</label>
-                        
-                        <input type="checkbox" name="#" id="Pensão">
-                        <label for="Pensão">Pensão</label>
-                    </div>
+                    <section>
+                        <p class="title_categoria">- Categoria -</p>
 
-                    <div class="filtro_preco">
-                        <p>- Preço -</p>
+                        <div class="filtro_categoria">
+                            <input type="checkbox" name="#" id="casa">
+                            <label for="casa" class="testItem">Casa</label>
 
-                        <label for="preco_minimo" class="preco-input">Min:</label>
-                        <input type="number" id="preco_minimo" placeholder="R$00,00">
-            
-                        <label for="preco_maximo" class="preco-input">Max:</label>
-                        <input type="number" id="preco_maximo" placeholder="R$00,00">
-                    </div>
+                            <input type="checkbox" name="#" id="apartamento">
+                            <label for="apartamento">Apartamento</label>
+                            
+                            <input type="checkbox" name="#" id="Kitnet">
+                            <label for="Kitnet">Kitnet</label>
+                            
+                            <input type="checkbox" name="#" id="República">
+                            <label for="República">República</label>
+                            
+                            <input type="checkbox" name="#" id="Quarto">
+                            <label for="Quarto">Quarto</label>
+                            
+                            <input type="checkbox" name="#" id="Quarto_Compartilhado">
+                            <label for="Quarto_Compartilhado">Quarto Compartilhado</label>
+                            
+                            <input type="checkbox" name="#" id="Dormitório">
+                            <label for="Dormitório">Dormitório</label>
+                            
+                            <input type="checkbox" name="#" id="Pensão">
+                            <label for="Pensão">Pensão</label>
+                        </div>
+                        
+                    </section>
 
-                    <div class="filtro_interior">
-                        <p>- Vagas e Comodos -</p>
+                    <section>
+                        <p class="title_preco">- Preço -</p>
 
-                        <label for="vagas" class="vagas-input">N° de vagas:</label>
-                        <input type="number" id="vagas" placeholder="0">
-                        
-                        <label for="comodos" class="vagas-input">N° de cômodos:</label>
-                        <input type="number" id="comodos" placeholder="0">
-                    </div>
+                        <div class="filtro_preco">
+                            <label for="preco_minimo" class="preco-input">Min:</label>
+                            <input type="number" id="preco_minimo" placeholder="R$00,00">
+                
+                            <label for="preco_maximo" class="preco-input">Max:</label>
+                            <input type="number" id="preco_maximo" placeholder="R$00,00">
+                        </div>
 
-                    <div class="filtro_extras">
-                        <p>- Possui -</p>
+                    </section>
 
-                        <input type="checkbox" id="wi_fi">
-                        <label for="wi_fi"><img src="img/Wifi.png" alt="">Wi-Fi</label>
-                        
-                        <input type="checkbox" name="" id="refeicao">
-                        <label for="refeicao"><img src="img/refeicao.png" alt="">Refeição</label>
-                        
-                        <input type="checkbox" name="" id="lazer">
-                        <label for="lazer"><img src="img/Lazer.png" alt="">Área de Lazer</label>
-                        
-                        <input type="checkbox" name="" id="carro">
-                        <label for="carro"><img src="img/estacionamento.png" alt="">Estacionamento</label>
-                        
-                        <input type="checkbox" name="" id="animais">
-                        <label for="animais"><img src="img/animal.png" alt="">Permite Animais</label>
-                    </div>
+                    <section>
+                        <p class="title_interior">- Vagas e Comodos -</p>
+
+                        <div class="filtro_interior">
+                            <label for="vagas" class="vagas-input">N° de vagas:</label>
+                            <input type="number" id="vagas" placeholder="0">
+                            
+                            <label for="comodos" class="vagas-input">N° de cômodos:</label>
+                            <input type="number" id="comodos" placeholder="0">
+                        </div>
+
+                    </section>
+
+                    <section>
+                        <p class="title_extras">- Possui -</p>
+
+                        <div class="filtro_extras">
+                            <input type="checkbox" id="wi_fi">
+                            <label for="wi_fi"><img src="img/Wifi.png" alt="">Wi-Fi</label>
+                            
+                            <input type="checkbox" name="" id="refeicao">
+                            <label for="refeicao"><img src="img/refeicao.png" alt="">Refeição</label>
+                            
+                            <input type="checkbox" name="" id="lazer">
+                            <label for="lazer"><img src="img/Lazer.png" alt="">Área de Lazer</label>
+                            
+                            <input type="checkbox" name="" id="carro">
+                            <label for="carro"><img src="img/estacionamento.png" alt="">Estacionamento</label>
+                            
+                            <input type="checkbox" name="" id="animais">
+                            <label for="animais"><img src="img/animal.png" alt="">Permite Animais</label>
+                        </div>
+
+                    </section>
 
                 </form>
             </section>
