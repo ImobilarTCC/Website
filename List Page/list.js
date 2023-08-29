@@ -1,4 +1,3 @@
-let getFiltroH1 = document.querySelector(".filtro h1");
 let getFormContent = document.querySelector(".filtro_form");
 let menuOpenFiltro = false;
 
@@ -26,16 +25,12 @@ let toggleFiltroMenu = function (){
 let mediaQueryFiltro = window.matchMedia('(max-width: 1200px)');
 mediaQueryFiltro.addEventListener('change', function (e) {
     if (e.matches) {
-        getFiltroH1.innerHTML = "- Filtros -";
-        getFiltroH1.style.textAlign = "Center";
         getFormContent.style.maxHeight = "0px";
         getFormContent.style.opacity = "0";
         getFormContent.style.visibility = "hidden";
         getFormContent.style.overflow = "hidden";
         menuOpenFiltro = false;
     } else {
-        getFiltroH1.innerHTML = "Filtrar por:";
-        getFiltroH1.style.textAlign = "unset";
         getFormContent.style.maxHeight = "unset";
         getFormContent.style.opacity = "1";
         getFormContent.style.visibility = "visible";

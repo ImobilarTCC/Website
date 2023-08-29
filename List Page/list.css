@@ -22,6 +22,13 @@ main{
     color: #154360;
     padding: 0 10px;
 }
+.filtro_h1_1{
+    display: unset;
+}
+.filtro_h1_2{
+    display: none;
+    text-align: center;
+}
 .filtro div{
     display: flex;
     flex-direction: column;
@@ -88,6 +95,7 @@ main{
     width: 25px;
     height: auto;
 }
+
 
 /* 2nd Half */
 .moradias{
@@ -199,6 +207,12 @@ input::-webkit-inner-spin-button {
     .filtro h1:hover{
         transition: all 0.3s;
         color: #c0392b;
+    }
+    .filtro_h1_1{
+        display: none;
+    }
+    .filtro_h1_2{
+        display: unset;
     }
     .filtro_form{
         display: flex;
