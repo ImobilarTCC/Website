@@ -3,15 +3,15 @@ let getHeaderMobileOverlay = document.querySelector(".mobile-menu-overlay");
 let getHeaderLogo = document.querySelector(".header-logo");
 let getHeaderNav = document.querySelector(".header-navigation");
 let getHeaderIcons = document.querySelector(".header-icons");
-const width = window.innerWidth;
-let menuOpen = false;
+
+let menuOpenHeader = false;
 
 let toggleMenu = function () {
 
-    if (!menuOpen) {
+    if (!menuOpenHeader) {
         getHeaderMain.style.width = "85%";
         getHeaderMain.style.borderRight = "3px solid #154360";
-        getHeaderMain.style.transition = "all 0.7s ease-in-out";
+        getHeaderMain.style.transition = "all 0.4s linear";
         getHeaderLogo.style.opacity = "1";
         getHeaderNav.style.opacity = "1";
         getHeaderIcons.style.opacity = "1";
@@ -20,7 +20,7 @@ let toggleMenu = function () {
         getHeaderIcons.style.visibility = "visible";
         getHeaderMobileOverlay.style.display = "flex";
         document.body.style.overflow = "hidden";
-        menuOpen = true;
+        menuOpenHeader = true;
     } else {
         getHeaderMain.style.borderRight = "0px solid transparent";
         getHeaderLogo.style.opacity = "0";
@@ -32,12 +32,12 @@ let toggleMenu = function () {
         getHeaderMobileOverlay.style.display = "none";
         document.body.style.overflow = "auto";
         getHeaderMain.style.width = "0%";
-        menuOpen = false;
+        menuOpenHeader = false;
     }
 }
 
-let mediaQuery = window.matchMedia('(min-width: 993px)');
-mediaQuery.addEventListener('change', function (e) {
+let mediaQueryHeader = window.matchMedia('(min-width: 993px)');
+mediaQueryHeader.addEventListener('change', function (e) {
     if (e.matches) {
         getHeaderMain.style.width = "100%";
         getHeaderMain.style.borderRight = "0px solid transparent";

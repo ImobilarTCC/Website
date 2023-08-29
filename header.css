@@ -239,6 +239,7 @@ body{
         background-color: var(--blueColor);
         color: white;
         border-radius: 10px;
+        white-space: nowrap;
     }
     .header-navigation ul li a:hover{
         cursor: pointer;
