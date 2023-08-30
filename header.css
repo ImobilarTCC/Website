@@ -111,7 +111,6 @@ body{
         width: 100%;
         height: fit-content;
         background-color: white;
-        /*background-color: var(--blueColor);*/
         border-bottom: 2px solid var(--blueColor);
         padding: 7px 10px;
         position: fixed;
@@ -255,7 +254,7 @@ body{
         justify-content: space-evenly;
     }
     .header-navigation ul li{
-        width: 80%;
+        width: 90%;
         height: calc(65% / var(--menu-items));
     }
     .header-navigation ul li a{

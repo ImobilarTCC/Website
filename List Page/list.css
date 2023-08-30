@@ -62,9 +62,11 @@ main{
     padding: 5px 0;
     margin-bottom: 20px;
 }
-.filtro input[type=text]:hover,.filtro input[type=number]:hover,.filtro select:hover{
-    transition: all 0.2s;
-    border-bottom: 2px solid rgba(192, 57, 43, 0.5);
+@media (pointer: fine){
+    .filtro input[type=text]:hover,.filtro input[type=number]:hover,.filtro select:hover{
+        transition: all 0.2s;
+        border-bottom: 2px solid rgba(192, 57, 43, 0.5);
+    }
 }
 .filtro input[type=text]:focus,.filtro input[type=number]:focus,.filtro select:focus{
     transition: all 0.2s;
@@ -83,10 +85,12 @@ main{
     padding: 5px 13px;
     user-select: none;
 }
-.filtro_categoria label:hover,.filtro_extras label:hover{
-    cursor: pointer;
-    border-color: rgba(21, 67, 96, 0.5);
-    color: rgba(21, 67, 96, 0.5);
+@media (pointer: fine){
+    .filtro_categoria label:hover,.filtro_extras label:hover{
+        cursor: pointer;
+        border-color: rgba(21, 67, 96, 0.5);
+        color: rgba(21, 67, 96, 0.5);
+    }
 }
 .filtro_extras label{
     display: flex;
@@ -167,10 +171,12 @@ main{
     padding: 8px 12px;
     border-radius: 100px;
 }
-.casa_detalhes_preco a:hover{
-    transition: all 0.2s;
-    background-color: #c0392b;
-    cursor: pointer;
+@media (pointer: fine){
+    .casa_detalhes_preco a:hover{
+        transition: all 0.2s;
+        background-color: #c0392b;
+        cursor: pointer;
+    }
 }
 .img_favorito,.img_favorito-active{
     position: absolute;
@@ -181,13 +187,16 @@ main{
     height: auto;
     user-select: none;
 }
-.img_favorito:hover{
-    cursor: pointer;
-    background-image: url(img/favoritoHover.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+@media (pointer: fine){
+    .img_favorito:hover{
+        cursor: pointer;
+        background-image: url(img/favoritoHover.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
 }
+
 /* Fixes  */
 /* Number Inputs Button */
 input::-webkit-outer-spin-button,
@@ -227,9 +236,11 @@ body,.header-main {
         font-size: 1.8rem;
         cursor: pointer;
     }
-    .filtro h1:hover{
-        transition: all 0.3s;
-        color: #c0392b;
+    @media (pointer: fine){
+        .filtro h1:hover{
+            transition: all 0.3s;
+            color: #c0392b;
+        }
     }
     .filtro_h1_1{
         display: none;
