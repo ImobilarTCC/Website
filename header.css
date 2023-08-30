@@ -10,7 +10,7 @@ body{
     flex-direction: column;
     justify-content: center;
 }
-.mobile-menu-btn,.mobile-menu-overlay{
+.mobile-menu-overlay,.mobile-menu-bar{
     display: none;
 }
 .header-main{
@@ -101,29 +101,58 @@ body{
 }
 
 @media screen and (max-width: 992px) {
-    .mobile-menu-btn{
+    body{
+        margin: 50px 0;
+    }
+    .mobile-menu-bar{
         display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        height: fit-content;
+        background-color: white;
+        /*background-color: var(--blueColor);*/
+        border-bottom: 2px solid var(--blueColor);
+        padding: 7px 10px;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+    }
+    .mobile-menu-logo{
         width: fit-content;
         height: fit-content;
-        position: fixed;
-        right: 0;
-        top: 0;
-        border-bottom-left-radius: 5px;
-        padding: 0 7px;
+        visibility: visible;
+        cursor: pointer;
+    }
+    .mobile-menu-logo img{
+        width: 150px;
+        height: auto;
+    }
+    .mobile-menu-menuButton,.mobile-menu-exitButton{
+        display: flex;
+        align-items: center;
+        width: fit-content;
+        height: fit-content;
+        cursor: pointer;
+        gap: 7px;
+        color: white;
+        font-size: 1.2rem;
         background-color: var(--blueColor);
-        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
-        z-index: 20;
+        padding: 7px 10px;
+        border-radius: 100px;
     }
-    .mobile-menu-btn img{
-        width: auto;
-        height: 50px;
+    .mobile-menu-menuButton:hover,.mobile-menu-exitButton:hover{
+        transition: all 0.2s;
+        background-color: var(--redColor);
     }
-    @media (hover: hover) {
-        .mobile-menu-btn:hover{
-            cursor: pointer;
-            transition: all 0.2s;
-            background-color: var(--redColor);
-        }
+    .mobile-menu-menuButton img,.mobile-menu-exitButton img{
+        width: 25px;
+        height: auto;
+    }
+    .mobile-menu-exitButton{
+        display: none;
     }
     .mobile-menu-overlay{
         position: fixed;
@@ -147,6 +176,7 @@ body{
         flex-direction: column;
         align-items: center;
         font-size: 1.4rem;
+        box-shadow: unset;
         overflow-y: auto;
         overflow-x: hidden;
     }

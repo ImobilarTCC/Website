@@ -76,15 +76,17 @@ main{
 }
 .filtro_categoria label,.filtro_extras label{
     width: fit-content;
-    border: 2px solid transparent;
+    border-width: 2px;
+    border-style: solid;
+    border-color: transparent;
     border-radius: 100px;
     padding: 5px 13px;
+    user-select: none;
 }
 .filtro_categoria label:hover,.filtro_extras label:hover{
-    transition: all 0.3s;
     cursor: pointer;
-    border: 2px solid #154360;
-    color: #154360;
+    border-color: rgba(21, 67, 96, 0.5);
+    color: rgba(21, 67, 96, 0.5);
 }
 .filtro_extras label{
     display: flex;
@@ -95,7 +97,10 @@ main{
     width: 25px;
     height: auto;
 }
-
+.filtro_categoria input:checked + label,.filtro_extras input:checked + label{
+    border-color: #154360;
+    color: #154360;
+}
 
 /* 2nd Half */
 .moradias{
@@ -167,20 +172,38 @@ main{
     background-color: #c0392b;
     cursor: pointer;
 }
-.img_favorito{
+.img_favorito,.img_favorito-active{
     position: absolute;
     right: 0;
     top: 0;
     margin: 10px 10px 0 0;
     width: 20px;
     height: auto;
+    user-select: none;
 }
-
-/* Fix */
+.img_favorito:hover{
+    cursor: pointer;
+    background-image: url(img/favoritoHover.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/* Fixes  */
+/* Number Inputs Button */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
+}
+/* Scrollbar */
+body::-webkit-scrollbar,.header-main::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+body,.header-main {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
 
 /* Break Points: 600px 601px 768px 992px 1200px */

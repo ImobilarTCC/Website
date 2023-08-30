@@ -15,8 +15,10 @@
 </head>
 
 <body>
-    <div class="mobile-menu-btn" onclick="toggleMenu()">
-        <img src="../header_img/burger-bar.png" alt="mobile-menu-btn">
+    <div class="mobile-menu-bar">
+        <div class="mobile-menu-logo"><a href="../index.html"><img src="../header_img/logoBlue2.png" alt="Logotipo"></a></div>
+        <div class="mobile-menu-menuButton" onclick="toggleMenu()"><p>Menu</p><img src="../header_img/menu-button-white.png" alt="menu-button"></div>
+        <div class="mobile-menu-exitButton" onclick="toggleMenu()"><p>Sair</p><img src="../header_img/exit-button-white.png" alt="exit-button"></div>
     </div>
     <div class="mobile-menu-overlay"></div>
     <header class="header-main">
@@ -83,28 +85,28 @@
 
                         <div class="filtro_categoria">
                             <input type="checkbox" name="#" id="casa">
-                            <label for="casa">Casa</label>
+                            <label for="casa" onclick="toggleCheckbox()">Casa</label>
 
                             <input type="checkbox" name="#" id="apartamento">
-                            <label for="apartamento">Apartamento</label>
+                            <label for="apartamento" onclick="toggleCheckbox()">Apartamento</label>
                             
                             <input type="checkbox" name="#" id="kitnet">
-                            <label for="kitnet">Kitnet</label>
+                            <label for="kitnet" onclick="toggleCheckbox()">Kitnet</label>
                             
                             <input type="checkbox" name="#" id="republica">
-                            <label for="republica">República</label>
+                            <label for="republica" onclick="toggleCheckbox()">República</label>
                             
                             <input type="checkbox" name="#" id="quarto">
-                            <label for="quarto">Quarto</label>
+                            <label for="quarto" onclick="toggleCheckbox()">Quarto</label>
                             
                             <input type="checkbox" name="#" id="quarto_compartilhado">
-                            <label for="quarto_compartilhado">Quarto Compartilhado</label>
+                            <label for="quarto_compartilhado" onclick="toggleCheckbox()">Quarto Compartilhado</label>
                             
                             <input type="checkbox" name="#" id="dormitório">
-                            <label for="dormitório">Dormitório</label>
+                            <label for="dormitório" onclick="toggleCheckbox()">Dormitório</label>
                             
                             <input type="checkbox" name="#" id="pensao">
-                            <label for="pensao">Pensão</label>
+                            <label for="pensao" onclick="toggleCheckbox()">Pensão</label>
                         </div>
                         
                     </section>
@@ -139,19 +141,19 @@
                         <p class="title_extras">- Possui -</p>
 
                         <div class="filtro_extras">
-                            <input type="checkbox" name="" id="wi_fi">
-                            <label for="wi_fi"><img src="img/Wifi.png" alt="">Wi-Fi</label>
+                            <input type="checkbox" name="" id="wi_fi" onclick="changeImg()">
+                            <label for="wi_fi"><img src="img/wifi.png" alt="">Wi-Fi</label>
                             
-                            <input type="checkbox" name="" id="refeicao">
+                            <input type="checkbox" name="" id="refeicao" onclick="changeImg()">
                             <label for="refeicao"><img src="img/refeicao.png" alt="">Refeição</label>
                             
-                            <input type="checkbox" name="" id="lazer">
-                            <label for="lazer"><img src="img/Lazer.png" alt="">Área de Lazer</label>
+                            <input type="checkbox" name="" id="lazer" onclick="changeImg()">
+                            <label for="lazer"><img src="img/lazer.png" alt="">Área de Lazer</label>
                             
-                            <input type="checkbox" name="" id="carro">
+                            <input type="checkbox" name="" id="carro" onclick="changeImg()">
                             <label for="carro"><img src="img/estacionamento.png" alt="">Estacionamento</label>
                             
-                            <input type="checkbox" name="" id="animais">
+                            <input type="checkbox" name="" id="animais" onclick="changeImg()">
                             <label for="animais"><img src="img/animal.png" alt="">Permite Animais</label>
                         </div>
 
@@ -172,9 +174,9 @@
                         <p><img src="img/contato.png" alt="">(11) 93756-0304</p>
                         <div class="casa_detalhes">
                             <div class="casa_detalhes_extras">
-                                <img src="img/Wifi.png" alt="">
+                                <img src="img/wifi.png" alt="">
                                 <img src="img/refeicao.png" alt="">
-                                <img src="img/Lazer.png" alt="">
+                                <img src="img/lazer.png" alt="">
                                 <img src="img/estacionamento.png" alt="">
                                 <img src="img/animal.png" alt="">
                             </div>
@@ -183,7 +185,7 @@
                                 <a href="../Detailed Page/details.html">Mais Detalhes</a>
                             </div>
                         </div>
-                        <img src="img/favorito.png" alt="" class="img_favorito">
+                        <img src="img/favorito.png" alt="" class="img_favorito" onclick="changeFavorite(this)">
                     </div>
                 </section>
 
@@ -198,9 +200,9 @@
                         <p><img src="img/contato.png" alt="">(11) 93756-0304</p>
                         <div class="casa_detalhes">
                             <div class="casa_detalhes_extras">
-                                <img src="img/Wifi.png" alt="">
+                                <img src="img/wifi.png" alt="">
                                 <img src="img/refeicao.png" alt="">
-                                <img src="img/Lazer.png" alt="">
+                                <img src="img/lazer.png" alt="">
                                 <img src="img/estacionamento.png" alt="">
                                 <img src="img/animal.png" alt="">
                             </div>
@@ -209,7 +211,7 @@
                                 <a href="../Detailed Page/details.html">Mais Detalhes</a>
                             </div>
                         </div>
-                        <img src="img/favorito.png" alt="" class="img_favorito">
+                        <img src="img/favorito.png" alt="" class="img_favorito" onclick="changeFavorite(this)">
                     </div>
                 </section>
 
@@ -224,9 +226,9 @@
                         <p><img src="img/contato.png" alt="">(11) 93756-0304</p>
                         <div class="casa_detalhes">
                             <div class="casa_detalhes_extras">
-                                <img src="img/Wifi.png" alt="">
+                                <img src="img/wifi.png" alt="">
                                 <img src="img/refeicao.png" alt="">
-                                <img src="img/Lazer.png" alt="">
+                                <img src="img/lazer.png" alt="">
                                 <img src="img/estacionamento.png" alt="">
                                 <img src="img/animal.png" alt="">
                             </div>
@@ -235,7 +237,7 @@
                                 <a href="../Detailed Page/details.html">Mais Detalhes</a>
                             </div>
                         </div>
-                        <img src="img/favorito.png" alt="" class="img_favorito">
+                        <img src="img/favorito.png" alt="" class="img_favorito" onclick="changeFavorite(this)">
                     </div>
                 </section>
 
@@ -250,9 +252,9 @@
                         <p><img src="img/contato.png" alt="">(11) 93756-0304</p>
                         <div class="casa_detalhes">
                             <div class="casa_detalhes_extras">
-                                <img src="img/Wifi.png" alt="">
+                                <img src="img/wifi.png" alt="">
                                 <img src="img/refeicao.png" alt="">
-                                <img src="img/Lazer.png" alt="">
+                                <img src="img/lazer.png" alt="">
                                 <img src="img/estacionamento.png" alt="">
                                 <img src="img/animal.png" alt="">
                             </div>
@@ -261,7 +263,7 @@
                                 <a href="../Detailed Page/details.html">Mais Detalhes</a>
                             </div>
                         </div>
-                        <img src="img/favorito.png" alt="" class="img_favorito">
+                        <img src="img/favorito.png" alt="" class="img_favorito" onclick="changeFavorite(this)">
                     </div>
                 </section>
 
@@ -276,9 +278,9 @@
                         <p><img src="img/contato.png" alt="">(11) 93756-0304</p>
                         <div class="casa_detalhes">
                             <div class="casa_detalhes_extras">
-                                <img src="img/Wifi.png" alt="">
+                                <img src="img/wifi.png" alt="">
                                 <img src="img/refeicao.png" alt="">
-                                <img src="img/Lazer.png" alt="">
+                                <img src="img/lazer.png" alt="">
                                 <img src="img/estacionamento.png" alt="">
                                 <img src="img/animal.png" alt="">
                             </div>
@@ -287,7 +289,7 @@
                                 <a href="../Detailed Page/details.html">Mais Detalhes</a>
                             </div>
                         </div>
-                        <img src="img/favorito.png" alt="" class="img_favorito">
+                        <img src="img/favorito.png" alt="" class="img_favorito" onclick="changeFavorite(this)">
                     </div>
                 </section>
 
@@ -302,9 +304,9 @@
                         <p><img src="img/contato.png" alt="">(11) 93756-0304</p>
                         <div class="casa_detalhes">
                             <div class="casa_detalhes_extras">
-                                <img src="img/Wifi.png" alt="">
+                                <img src="img/wifi.png" alt="">
                                 <img src="img/refeicao.png" alt="">
-                                <img src="img/Lazer.png" alt="">
+                                <img src="img/lazer.png" alt="">
                                 <img src="img/estacionamento.png" alt="">
                                 <img src="img/animal.png" alt="">
                             </div>
@@ -313,7 +315,7 @@
                                 <a href="../Detailed Page/details.html">Mais Detalhes</a>
                             </div>
                         </div>
-                        <img src="img/favorito.png" alt="" class="img_favorito">
+                        <img src="img/favorito.png" alt="" class="img_favorito" onclick="changeFavorite(this)">
                     </div>
                 </section>
 
@@ -328,9 +330,9 @@
                         <p><img src="img/contato.png" alt="">(11) 93756-0304</p>
                         <div class="casa_detalhes">
                             <div class="casa_detalhes_extras">
-                                <img src="img/Wifi.png" alt="">
+                                <img src="img/wifi.png" alt="">
                                 <img src="img/refeicao.png" alt="">
-                                <img src="img/Lazer.png" alt="">
+                                <img src="img/lazer.png" alt="">
                                 <img src="img/estacionamento.png" alt="">
                                 <img src="img/animal.png" alt="">
                             </div>
@@ -339,7 +341,7 @@
                                 <a href="../Detailed Page/details.html">Mais Detalhes</a>
                             </div>
                         </div>
-                        <img src="img/favorito.png" alt="" class="img_favorito">
+                        <img src="img/favorito.png" alt="" class="img_favorito" onclick="changeFavorite(this)">
                     </div>
                 </section>
                 
