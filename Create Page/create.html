@@ -13,8 +13,10 @@
     <title>Publicar Moradia</title>
 </head>
 <body>
-    <div class="mobile-menu-btn">
-        <img src="../header_img/burger-bar.png" alt="mobile-menu-btn">
+    <div class="mobile-menu-bar">
+        <div class="mobile-menu-logo"><a href="../index.html"><img src="../header_img/logoBlue2.png" alt="Logotipo"></a></div>
+        <div class="mobile-menu-menuButton" onclick="toggleMenu()"><p>Menu</p><img src="../header_img/menu-button-white.png" alt="menu-button"></div>
+        <div class="mobile-menu-exitButton" onclick="toggleMenu()"><p>Sair</p><img src="../header_img/exit-button-white.png" alt="exit-button"></div>
     </div>
     <div class="mobile-menu-overlay"></div>
     <header class="header-main">
@@ -43,131 +45,84 @@
         </section>
     </header>
     <script src="../header.js"></script>
-        <main class="wrapper">
-            <section class="criacao">
-                <div class="criacao_imgs">
-                    <div class="criacao_img"><button><img src="img/plus.png" alt=""></button></div>
+    
+    <main class="wrapper">
+        <section class="criacao">
+            <div class="criacao-img">
+                <div class="criacao-img-add">
+                    <button><img src="img/plus.png" alt="adicionar-icon"></button>
                 </div>
-                <form action="" id="publicar">
-                    <div class="criacao_dados">
-                        <h2>DADOS</h2>
+            </div>
+            <form action="#" class="criacao-dados">
+                <section>
+                    <h2>DADOS</h2>
+                    <label for="input_nome">Nome: </label>
+                    <input type="text" name="" id="input_nome">
+                    
+                    <label for="input_tipo">Tipo: </label>
+                    <select name="" id="input_tipo">
+                        <option value="exemplo1">exemplo1</option>
+                        <option value="exemplo2">exemplo2</option>
+                        <option value="exemplo3">exemplo3</option>
+                    </select>
+    
+                    <label for="input_cep">CEP: </label>
+                    <input type="number" name="" id="input_cep">
+    
+                    <label for="input_cidade">Cidade: </label>
+                    <input type="text" name="" id="input_cidade">
+    
+                    <label for="input_estado">Estado: </label>
+                    <input type="text" name="" id="input_estado">
 
-                        <div class="input">
-                            <label for="nome">Nome:</label>
-                            <input type="text" name="" id="nome">
-                        </div>
-                        <div class="input">
-                            <label for="tipo">Tipo: </label>
-                            <select name="" id="tipo">
-                                <option value="none">- Selecionar -</option>
-                                <option value="casa">Casa</option>
-                                <option value="apartamento">Apartamento</option>
-                                <option value="kitnet">Kitnet</option>
-                                <option value="quarto">Quarto</option>
-                                <option value="quarto_compartilhado">Quarto Compartilhado</option>
-                                <option value="dormitorio">Dormitório</option>
-                                <option value="republica">Republica</option>
-                                <option value="pensao">Pensão</option>
-                            </select>
-                        </div>
+                    <label for="input_tamanho">Tamanho: </label>
+                    <input type="number" name="" id="input_tamanho">
+
+                    <label for="input_estado">Comodos: </label>
+                    <input type="number" name="" id="input_estado">
+
+                    <label for="input_estado">Vagas: </label>
+                    <input type="number" name="" id="input_vagas">
+
+                    <div class="input-extras">
+                        <h3>Possui:</h3>
+
+                        <input type="checkbox" name="" id="wi_fi" onclick="changeImg()">
+                        <label for="wi_fi"><img src="img/Wifi.png" alt="wifi-icon">Wi-Fi</label>
                         
-
-                        <div class="input-cep">
-                            <label for="cep">CEP:</label>
-                            <input type="number" name="" id="cep">
-                        </div>
-
-                        <div class="input">
-                            <label for="city">Cidade:</label>
-                            <input type="text" name="" id="city">
-                        </div>
-
-                        <div class="input">
-                            <label for="estado">Estado:</label>
-                            <input type="text" name="" id="estado">
-                        </div>
-
-                        <div class="input">
-                            <label for="tamanho">Tamanho:</label>
-                            <input type="number" name="" id="tamanho">
-                        </div>
-
-                        <div class="input">
-                            <label for="comodo">Comodos:</label>
-                            <input type="number" name="" id="comodo">
-                        </div>
-
-                        <div class="input">
-                            <input type="number" name="" id="opcao1">
-                            <select name="" id="opcao1">
-                                <option value="sala">Sala</option>
-                                <option value="banheiro">Banheiro</option>
-                                <option value="quarto">Quarto</option>
-                            </select>
-                        </div>
-
-                        <div class="input">
-                            <input type="number" name="" id="opcao2">
-                            <select name="" id="opcao2">
-                                <option value="sala">Sala</option>
-                                <option value="banheiro">Banheiro</option>
-                                <option value="quarto">Quarto</option>
-                            </select>
-                        </div>
-
-                        <div class="input">
-                            <input type="number" name="" id="opcao3">
-                            <select name="" id="opcao3">
-                                <option value="sala">Sala</option>
-                                <option value="banheiro">Banheiro</option>
-                                <option value="quarto">Quarto</option>
-                            </select>
-                        </div>
-
-                        <div class="input">
-                            <label for="vaga">Vagas:</label>
-                            <input type="number" name="" id="vaga"> 
-                        </div>
-
-                        <p>Possui:</p>
-                        <div class="extras">
-                            <input type="checkbox" name="" id="wifi">
-                            <label for="wifi"><img src="img/WifiSim.png" alt="">Wi-fi</label>
-                            <input type="checkbox" name="" id="refeicao">
-                            <label for="refeicao"><img src="img/refeicaoSim.png" alt="">Refeição</label>
-                            <input type="checkbox" name="" id="lazer">
-                            <label for="lazer"><img src="img/LazerSim.png" alt="">Área de Lazer</label>
-                            <input type="checkbox" name="" id="estacionamento">
-                            <label for="estacionamento"><img src="img/estacionamentoSim.png" alt="">Estacionamento</label>
-                            <input type="checkbox" name="" id="animais">
-                            <label for="animais"><img src="img/animalSim.png" alt="">Permite Animais</label>
-                        </div> 
-                            
-                        <div class="input-valor">
-                            <label for="valor">Valor:</label>
-                            <input type="number" name="" id="valor">
-                        </div>
-                       
+                        <input type="checkbox" name="" id="refeicao" onclick="changeImg()">
+                        <label for="refeicao"><img src="img/Dinner.png" alt="refeicao-icon">Refeição</label>
+                        
+                        <input type="checkbox" name="" id="lazer" onclick="changeImg()">
+                        <label for="lazer"><img src="img/Leisure.png" alt="lazer-icon">Área de Lazer</label>
+                        
+                        <input type="checkbox" name="" id="carro" onclick="changeImg()">
+                        <label for="carro"><img src="img/Parking.png" alt="estacionamento-icon">Estacionamento</label>
+                        
+                        <input type="checkbox" name="" id="animais" onclick="changeImg()">
+                        <label for="animais"><img src="img/Animals.png" alt="animais-icon">Permite Animais</label>
                     </div>
-                    <div class="criacao_contato">
-                        <h2>CONTATO</h2>
-                        <div class="input">
-                            <label for="email">Email:</label>
-                            <input type="email" id="email">    
-                        </div>
-                        <div class="input">
-                            <label for="telefone">Telefone:</label>
-                            <input type="number" id="telefone">   
-                        </div>    
-                    </div>
-                    <div class="criacao_comentario">
-                        <label for="Comentario">Comentário:</label>
-                        <textarea name="" id="Comentario" cols="60" rows="10"></textarea>
-                    </div>
-                </form>
-                <button type="submit" class="submit" form="publicar">Publicar</button>
-            </section>
-        </main>    
+    
+                    <label for="input_valor">Valor: </label>
+                    <input type="number" name="" id="input_valor">
+                    
+                    <label for="input_comentario">Comentário: </label>
+                    <textarea name="" id="input_comentario" cols="30" rows="10"></textarea>
+                </section>
+
+                <section class="criacao-contato">
+                    <h2>CONTATO</h2>
+
+                    <label for="input_email">Email: </label>
+                    <input type="text" name="" id="input_email">
+
+                    <label for="input_phone">Telefone: </label>
+                    <input type="number" name="" id="input_phone">
+                </section>
+
+            </form>
+        </section>
+    </main>    
 </body>
 <script src="create.js"></script>
 </html>
