@@ -13,8 +13,10 @@
     <title>Detalhes</title>
 </head>
 <body>
-    <div class="mobile-menu-btn">
-        <img src="../header_img/burger-bar.png" alt="mobile-menu-btn">
+    <div class="mobile-menu-bar">
+        <div class="mobile-menu-logo"><a href="../index.html"><img src="../header_img/logoBlue2.png" alt="Logotipo"></a></div>
+        <div class="mobile-menu-menuButton" onclick="toggleMenu()"><p>Menu</p><img src="../header_img/menu-button-white.png" alt="menu-button"></div>
+        <div class="mobile-menu-exitButton" onclick="toggleMenu()"><p>Sair</p><img src="../header_img/exit-button-white.png" alt="exit-button"></div>
     </div>
     <div class="mobile-menu-overlay"></div>
     <header class="header-main">
@@ -48,53 +50,57 @@
         <section class="detalhes1">
             <div class="detalhes1_img"></div>
             <div class="detalhes1_vendedor">
-                <h1>Mansão do jazzghost</h1>
+                <h1>Casa Zakariana</h1>
                 <div class="detalhes1_vendedor_contato">
-                    <span><img src="img/userBlue.png" alt="">Juliano Barros(jazzghost)</span>
-                    <span><img src="img/contatoBlue.png" alt="">(11) 91427-5108</span>
-                    <span><img src="img/emailBlue.png" alt="">jazzghost@gmail.com</span>
+                    <p><img src="img/UserBlue.png" alt="">Zakariano Dias (Zakarias)</p>
+                    <p><img src="img/PhoneBlue.png" alt="">(11) 91427-5108</p>
+                    <p><img src="img/EmailBlue.png" alt="">zakarias@gmail.com</p>
                 </div>
                 <div class="detalhes1_vendedor_comentario">
-                    <span> <img src="img/commentBlue.png" alt="">Comentário do Vendedor:</span>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam mauris enim,
-                         egestas ut enim at, scelerisque interdum justo. Ut iaculis, augue sit amet ullamcorper
-                          varius, purus lorem pharetra enim, at tincidunt mauris tortor non sem. Aliquam sed est 
-                          vel tellus pulvinar vulputate. Ut at massa neque. Suspendisse condimentum nunc ut purus 
-                          iaculis ultrices. Sed mattis, nisi congue ultrices euismod, velit sem ornare lacus, sed 
-                          porta velit ex ut risus. Suspendisse potenti. Etiam ac bibendum mauris. Etiam malesuada 
-                          nunc sit amet lobortis pulvinar. Pellentesque vehicula massa nisl, eu congue diam viverra 
-                          quis. Aliquam vulputate et nulla eu fringilla. </p>
+                    <p> <img src="img/CommentBlue.png" alt="">Comentário do Vendedor:</p>
+                    <span>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam mauris enim,
+                        egestas ut enim at, scelerisque interdum justo. Ut iaculis, augue sit amet ullamcorper
+                        varius, purus lorem pharetra enim, at tincidunt mauris tortor non sem. Aliquam sed est 
+                        vel tellus pulvinar vulputate. Ut at massa neque. Suspendisse condimentum nunc ut purus 
+                        iaculis ultrices. Sed mattis, nisi congue ultrices euismod, velit sem ornare lacus, sed 
+                        porta velit ex ut risus. Suspendisse potenti. Etiam ac bibendum mauris. Etiam malesuada 
+                        nunc sit amet lobortis pulvinar. Pellentesque vehicula massa nisl, eu congue diam viverra 
+                        quis. Aliquam vulputate et nulla eu fringilla.
+                    </span>
                 </div>
             </div>
         </section>
         <section class="detalhes2">
             <p class="detalhes2_preco">R$1651,68</p>
             <div class="detalhes2_info">
-                <span><img src="img/localizarBlue.png" alt="">Localização:</span>
-                <p>Guarulhos, São Paulo (07222-010)</p>
-                <span><img src="img/enderecoBlue.png" alt="">Endereço:</span>
-                <p>Avenida Patos, Nº 280</p>
-                <span><img src="img/tamanhoBlue.png" alt="">Tamanho:</span>
-                <p>70m²</p>
-                <span><img src="img/comodosBlue.png" alt="">Comodos: 7</span>
-                <p>1 Sala de estar
+                <p><img src="img/LocationBlue.png" alt="">Localização:</p>
+                <span>Guarulhos, São Paulo (07222-010)</span>
+                <p><img src="img/AddressBlue.png" alt="">Endereço:</p>
+                <span>Avenida Patos, Nº 280</span>
+                <p><img src="img/SizeBlue.png" alt="">Tamanho:</p>
+                <span>70m²</span>
+                <p><img src="img/RoomsBlue.png" alt="">Comodos:&nbsp<span id="reset_span">7</span></p>
+                <span>
+                    1 Sala de estar
                     <br>
                     1 Cozinha
                     <br>
                     3 Quartos
                     <br>
-                    2 Banheiros</p>
+                    2 Banheiros
+                </span>
                 <div class="extras">
-                    <span><img src="img/WifiSim.png" alt="">Wi-fi</span>
-                    <span><img src="img/refeicaoSim.png" alt="">Refeição</span>
-                    <span><img src="img/LazerSim.png" alt="">Área de Lazer</span>
-                    <span><img src="img/estacionamentoSim.png" alt="">Estacionamento</span>
-                    <span><img src="img/animalSim.png" alt="">Permite Animais</span>
+                    <p><img src="img/WifiBlue.png" alt="">Wi-fi</p>
+                    <p><img src="img/DinnerBlue.png" alt="">Refeição</p>
+                    <p><img src="img/LeisureBlue.png" alt="">Área de Lazer</p>
+                    <p><img src="img/ParkingBlue.png" alt="">Estacionamento</p>
+                    <p><img src="img/AnimalsBlue.png" alt="">Permite Animais</p>
                 </div>
                 <div class="vagas">
-                    <span><img src="img/totais.png" alt="">Vagas Totais: 4</span>
-                    <span><img src="img/livres.png" alt="">Vagas Livres: 3</span>
-                    <span><img src="img/ocupadas.png" alt="">Vagas Ocupadas: 1</span>
+                    <p><img src="img/Space.png" alt="">Vagas Totais:&nbsp<span id="reset_span">4</span></p>
+                    <p><img src="img/SpaceYes.png" alt="">Vagas Livres:&nbsp<span id="reset_span">3</span></p>
+                    <p><img src="img/SpaceNo.png" alt="">Vagas Ocupadas:&nbsp<span id="reset_span">1</span></p>
                 </div>
             </div>
         </section>

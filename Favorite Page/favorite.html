@@ -15,8 +15,10 @@
 </head>
 
 <body>
-    <div class="mobile-menu-btn">
-        <img src="../header_img/burger-bar.png" alt="mobile-menu-btn">
+    <div class="mobile-menu-bar">
+        <div class="mobile-menu-logo"><a href="../index.html"><img src="../header_img/logoBlue2.png" alt="Logotipo"></a></div>
+        <div class="mobile-menu-menuButton" onclick="toggleMenu()"><p>Menu</p><img src="../header_img/menu-button-white.png" alt="menu-button"></div>
+        <div class="mobile-menu-exitButton" onclick="toggleMenu()"><p>Sair</p><img src="../header_img/exit-button-white.png" alt="exit-button"></div>
     </div>
     <div class="mobile-menu-overlay"></div>
     <header class="header-main">
@@ -47,32 +49,92 @@
     <script src="../header.js"></script>
 
     <section class="wrapper">
-        <section class="moradias">
-            <div class="item_lista">
-                <div class="casa_img"></div>
-                <div class="casa_info">
-                    <P>CASA</P>
-                    <span><img src="img/localizar.png" alt="">Quinto dos inferno - Acre</span>
-                    <span><img src="img/endereco.png" alt="">Rua josé Pinto, 32</span>
-                    <span><img src="img/comodos.png" alt="">5 comodos</span>
-                    <span><img src="img/user.png" alt="">3 vagas</span>
-                    <span><img src="img/contato.png" alt="">(11) 939777-1256</span>
-                    <div class="casa_extras">
-                        <img src="img/Wifi.png" alt="">
-                        <img src="img/refeicao.png" alt="">
-                        <img src="img/Lazer.png" alt="">
-                        <img src="img/estacionamento.png" alt="">
-                        <img src="img/animal.png" alt="">
+
+        <main>
+            <section class="moradias">
+
+                <section class="item_lista">
+                    <div class="casa_img"></div>
+                    <div class="casa_info">
+                        <h2>CASA</h2>
+                        <p><img src="img/Location.png" alt="localizar-icon">Guarulhos, São Paulo</p>
+                        <p><img src="img/Address.png" alt="enderco-icon">Av. Marechal Deodoro, Nº 450</p>
+                        <p><img src="img/Rooms.png" alt="comodos-icon">7 comodos</p>
+                        <p><img src="img/Space.png" alt="vagas-icon">2 vagas disponiveis</p>
+                        <p><img src="img/Phone.png" alt="telefone-icon">(11) 93756-0304</p>
+                        <div class="casa_detalhes">
+                            <div class="casa_detalhes_extras">
+                                <img src="img/Wifi.png" alt="wifi-icon">
+                                <img src="img/Dinner.png" alt="refeicao-icon">
+                                <img src="img/Leisure.png" alt="lazer-icon">
+                                <img src="img/Parking.png" alt="estacionamento-icon">
+                                <img src="img/Animals.png" alt="animais-icon">
+                            </div>
+                            <div class="casa_detalhes_preco">
+                                <p>R$500.000,00</p>
+                                <a href="../Detailed Page/details.html">Mais Detalhes</a>
+                            </div>
+                        </div>
+                        <img src="img/favorito.png" alt="" class="img_favorito" onclick="changeFavorite(this)">
                     </div>
-                    <div class="casa_detalhes">
-                        <span>R$50.000,00</span>
-                        <a href="../Detailed Page/details.html" class="casa_botao">Mais Detalhes</a>
+                </section>
+
+                <section class="item_lista">
+                    <div class="casa_img"></div>
+                    <div class="casa_info">
+                        <h2>CASA</h2>
+                        <p><img src="img/Location.png" alt="localizar-icon">Guarulhos, São Paulo</p>
+                        <p><img src="img/Address.png" alt="enderco-icon">Av. Marechal Deodoro, Nº 450</p>
+                        <p><img src="img/Rooms.png" alt="comodos-icon">7 comodos</p>
+                        <p><img src="img/Space.png" alt="vagas-icon">2 vagas disponiveis</p>
+                        <p><img src="img/Phone.png" alt="telefone-icon">(11) 93756-0304</p>
+                        <div class="casa_detalhes">
+                            <div class="casa_detalhes_extras">
+                                <img src="img/Wifi.png" alt="wifi-icon">
+                                <img src="img/Dinner.png" alt="refeicao-icon">
+                                <img src="img/Leisure.png" alt="lazer-icon">
+                                <img src="img/Parking.png" alt="estacionamento-icon">
+                                <img src="img/Animals.png" alt="animais-icon">
+                            </div>
+                            <div class="casa_detalhes_preco">
+                                <p>R$500.000,00</p>
+                                <a href="../Detailed Page/details.html">Mais Detalhes</a>
+                            </div>
+                        </div>
+                        <img src="img/favorito.png" alt="" class="img_favorito" onclick="changeFavorite(this)">
                     </div>
-                    <img src="img/favoritoRed.png" alt="" class="img_favorito">
-                </div>
-            </div>
-        </section>
-    </main>
+                </section>
+
+                <section class="item_lista">
+                    <div class="casa_img"></div>
+                    <div class="casa_info">
+                        <h2>CASA</h2>
+                        <p><img src="img/Location.png" alt="localizar-icon">Guarulhos, São Paulo</p>
+                        <p><img src="img/Address.png" alt="enderco-icon">Av. Marechal Deodoro, Nº 450</p>
+                        <p><img src="img/Rooms.png" alt="comodos-icon">7 comodos</p>
+                        <p><img src="img/Space.png" alt="vagas-icon">2 vagas disponiveis</p>
+                        <p><img src="img/Phone.png" alt="telefone-icon">(11) 93756-0304</p>
+                        <div class="casa_detalhes">
+                            <div class="casa_detalhes_extras">
+                                <img src="img/Wifi.png" alt="wifi-icon">
+                                <img src="img/Dinner.png" alt="refeicao-icon">
+                                <img src="img/Leisure.png" alt="lazer-icon">
+                                <img src="img/Parking.png" alt="estacionamento-icon">
+                                <img src="img/Animals.png" alt="animais-icon">
+                            </div>
+                            <div class="casa_detalhes_preco">
+                                <p>R$500.000,00</p>
+                                <a href="../Detailed Page/details.html">Mais Detalhes</a>
+                            </div>
+                        </div>
+                        <img src="img/favorito.png" alt="" class="img_favorito" onclick="changeFavorite(this)">
+                    </div>
+                </section>
+
+            </section>
+        </main>
+
+    </section>
 </body>
 <script src="favorite.js"></script>
 </html>
