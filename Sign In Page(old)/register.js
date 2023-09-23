@@ -57,27 +57,17 @@ let togglePassword = function () {
     }
 }
 
-let changeMenu = function () {
+let toggleMenu = function () {
     let getFormRegister = document.querySelector(".register-form");
     let getFormLogin = document.querySelector(".login-form");
-    getFormRegister.style.transition = "height 0.5s linear";
-    getFormLogin.style.transition = "height 0.5s linear";
 
     if (!activeMenu) {
-        getFormRegister.style.height = "0%";
-
-        getFormRegister.addEventListener('transitionend', function () {
-            getFormLogin.style.height = '100%';
-        }, { once: true });
-
+        getFormRegister.style.display = "none";
+        getFormLogin.style.display = "flex";
         activeMenu = true;
     } else {
-        getFormLogin.style.height = "0%";
-
-        getFormLogin.addEventListener('transitionend', function () {
-            getFormRegister.style.height = '100%';
-        },{ once: true });
-
+        getFormRegister.style.display = "flex";
+        getFormLogin.style.display = "none";
         activeMenu = false;
     }
 }
