@@ -37,8 +37,8 @@
                     <div><img src="../header_img/bell.png" alt="notification bell"></div>
                 </div>
                 <ul>
-                    <li><a href="../Sign In Page/register.html">CADASTRO</a></li>
-                    <li><a href="../Sign Up Page/login.html">LOGIN</a></li>
+                    <li><a href="../Register Page/register.html">CADASTRO</a></li>
+                    <li><a href="../Register Page/register.html">LOGIN</a></li>
                 </ul>
                 <div class="header-pfp"><a href="../User Page/user.html"><img src="../header_img/pfp.png" alt="user pfp"></a></div>
             </div>
@@ -50,10 +50,10 @@
         <section class="criacao">
             <div class="criacao-img">
                 <div class="criacao-img-add">
-                    <button><img src="img/plus.png" alt="adicionar-icon"></button>
+                    <button type="button"><img src="img/plus.png" alt="adicionar-icon"></button>
                 </div>
             </div>
-            <form action="#" class="criacao-dados">
+            <form action="#" class="criacao-dados" id="form_post">
                 <section>
                     <h2>DADOS</h2>
                     <label for="input_nome">Nome: </label>
@@ -67,7 +67,7 @@
                     </select>
     
                     <label for="input_cep">CEP: </label>
-                    <input type="number" name="" id="input_cep">
+                    <input type="text" name="" id="input_cep" onInput="this.value = formatCep(this.value)">
     
                     <label for="input_cidade">Cidade: </label>
                     <input type="text" name="" id="input_cidade">
@@ -104,10 +104,10 @@
                     </div>
     
                     <label for="input_valor">Valor: </label>
-                    <input type="number" name="" id="input_valor">
+                    <input type="text" name="" id="input_valor" data-max="99999999">
                     
                     <label for="input_comentario">Comentário: </label>
-                    <textarea name="" id="input_comentario" cols="30" rows="10"></textarea>
+                    <textarea name="" id="" cols="0" rows="0"></textarea>
                 </section>
 
                 <section class="criacao-contato">
@@ -118,9 +118,12 @@
 
                     <label for="input_phone">Telefone: </label>
                     <input type="number" name="" id="input_phone">
+
+                    <button type="button"><img src="img/plus.png" alt="adicionar"></button>
                 </section>
 
             </form>
+            <button type="submit" form="form_post" class="submit-button">Enviar</button>
         </section>
     </main>    
 </body>
