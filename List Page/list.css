@@ -207,7 +207,8 @@ body:after{
              url(img/LeisureBlue.png) 
              url(img/DinnerBlue.png) 
              url(img/WifiBlue.png)
-             url(img/ParkingBlue.png);
+             url(img/ParkingBlue.png)
+             url(img/favoritoRed.png);
 }
 
 /* Break Points: 600px 601px 768px 992px 1200px */
