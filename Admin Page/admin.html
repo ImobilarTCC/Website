@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../header.css">
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="admin.css">
+    <title>Admin</title>
+</head>
+
+<body>
+    <div class="mobile-menu-bar">
+        <div class="mobile-menu-logo"><a href="../index.html"><img src="../header_img/logo-blue.png" alt="Logotipo"></a></div>
+        <div class="mobile-menu-button" onclick="toggleHeaderMenu()"><img src="../header_img/menu.png" alt="Menu"></div>
+    </div>
+    <div class="mobile-menu-overlay"></div>
+    <header class="header-main">
+        <section class="header-wrapper">
+            <div class="header-logo">
+                <a href="../index.html"><img src="../header_img/logo-blue.png" alt="logo"></a>
+                <div class="header-exit-button" onclick="toggleHeaderMenu()"><img src="../header_img/exit.png" alt="Menu"></div>
+            </div>
+            <nav class="header-navigation">
+                <ul>
+                    <li><img src="../header_img/house.png" alt="home-icon"><a href="../List Page/list.html">INICIO</a></li>
+                    <li><img src="../header_img/star.png" alt="favorite-icon"><a href="../Favorite Page/favorite.html">FAVORITOS</a></li>
+                    <li><img src="../header_img/globe.png" alt="publish-icon"><a href="../My Houses Page/myHouses.html">MINHAS PUBLICAÇÕES</a></li>
+                </ul>
+            </nav>
+            <div class="header-icons">
+                <div class="header-icons-addnotif">
+                    <div><a href="../Create Page/create.html"><img src="../header_img/plusBlue.png" alt="add icon"></a></div>
+                    <div><img src="../header_img/bell.png" alt="notification bell"></div>
+                </div>
+                <ul>
+                    <li><a href="../Register Page/register.html">CADASTRO</a></li>
+                    <li><a href="../Register Page/register.html">LOGIN</a></li>
+                </ul>
+                <div class="header-pfp"><a href="../User Page/user.html"><img src="../header_img/pfp.png" alt="user pfp"><span>Mike Toronto</span></a></div>
+            </div>
+        </section>
+    </header>
+    <script src="../header.js"></script>
+    
+    <section class="wrapper">
+
+        <main>
+            <section class="moradias">
+
+                <section class="item_lista">
+                    <div class="casa_img"></div>
+                    <div class="casa_info">
+                        <h2>CASA</h2>
+                        <p><img src="img/Location.png" alt="localizar-icon">Guarulhos, São Paulo</p>
+                        <p><img src="img/Address.png" alt="enderco-icon">Av. Marechal Deodoro, Nº 450</p>
+                        <p><img src="img/Rooms.png" alt="comodos-icon">7 comodos</p>
+                        <p><img src="img/Space.png" alt="vagas-icon">2 vagas disponiveis</p>
+                        <p><img src="img/Phone.png" alt="telefone-icon">(11) 93756-0304</p>
+                        <div class="casa_detalhes">
+                            <div class="casa_detalhes_extras">
+                                <img src="img/Wifi.png" alt="wifi-icon">
+                                <img src="img/Dinner.png" alt="refeicao-icon">
+                                <img src="img/Leisure.png" alt="lazer-icon">
+                                <img src="img/Parking.png" alt="estacionamento-icon">
+                                <img src="img/Animals.png" alt="animais-icon">
+                            </div>
+                            <div class="casa_detalhes_preco">
+                                <p>R$500.000,00</p>
+                                <a href="../Detailed Page/details.html">Mais Detalhes</a>
+                            </div>
+                        </div>
+                        <div class="casa_adm">
+                            <button>Aprovar</button>
+                            <button>Recusar</button>
+                            <button>Editar</button>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="item_lista">
+                    <div class="casa_img"></div>
+                    <div class="casa_info">
+                        <h2>CASA</h2>
+                        <p><img src="img/Location.png" alt="localizar-icon">Guarulhos, São Paulo</p>
+                        <p><img src="img/Address.png" alt="enderco-icon">Av. Marechal Deodoro, Nº 450</p>
+                        <p><img src="img/Rooms.png" alt="comodos-icon">7 comodos</p>
+                        <p><img src="img/Space.png" alt="vagas-icon">2 vagas disponiveis</p>
+                        <p><img src="img/Phone.png" alt="telefone-icon">(11) 93756-0304</p>
+                        <div class="casa_detalhes">
+                            <div class="casa_detalhes_extras">
+                                <img src="img/Wifi.png" alt="wifi-icon">
+                                <img src="img/Dinner.png" alt="refeicao-icon">
+                                <img src="img/Leisure.png" alt="lazer-icon">
+                                <img src="img/Parking.png" alt="estacionamento-icon">
+                                <img src="img/Animals.png" alt="animais-icon">
+                            </div>
+                            <div class="casa_detalhes_preco">
+                                <p>R$500.000,00</p>
+                                <a href="../Detailed Page/details.html">Mais Detalhes</a>
+                            </div>
+                        </div>
+                        <div class="casa_adm">
+                            <button>Aprovar</button>
+                            <button>Recusar</button>
+                            <button>Editar</button>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="item_lista">
+                    <div class="casa_img"></div>
+                    <div class="casa_info">
+                        <h2>CASA</h2>
+                        <p><img src="img/Location.png" alt="localizar-icon">Guarulhos, São Paulo</p>
+                        <p><img src="img/Address.png" alt="enderco-icon">Av. Marechal Deodoro, Nº 450</p>
+                        <p><img src="img/Rooms.png" alt="comodos-icon">7 comodos</p>
+                        <p><img src="img/Space.png" alt="vagas-icon">2 vagas disponiveis</p>
+                        <p><img src="img/Phone.png" alt="telefone-icon">(11) 93756-0304</p>
+                        <div class="casa_detalhes">
+                            <div class="casa_detalhes_extras">
+                                <img src="img/Wifi.png" alt="wifi-icon">
+                                <img src="img/Dinner.png" alt="refeicao-icon">
+                                <img src="img/Leisure.png" alt="lazer-icon">
+                                <img src="img/Parking.png" alt="estacionamento-icon">
+                                <img src="img/Animals.png" alt="animais-icon">
+                            </div>
+                            <div class="casa_detalhes_preco">
+                                <p>R$500.000,00</p>
+                                <a href="../Detailed Page/details.html">Mais Detalhes</a>
+                            </div>
+                        </div>
+                        <div class="casa_adm">
+                            <button>Aprovar</button>
+                            <button>Recusar</button>
+                            <button>Editar</button>
+                        </div>
+                    </div>
+                </section>
+
+            </section>
+        </main>
+
+    </section>
+</body>
+<script src="admin.js"></script>
+</html>

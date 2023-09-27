@@ -1,0 +1,199 @@
+:root{ 
+    --blueColor: #154360;
+    --redColor: #c0392b;
+}
+body{
+    margin-bottom: 50px;
+}
+.criacao img{
+    width: 25px;
+    height: auto;
+}
+.criacao{
+    width: 100%;
+    height: fit-content;
+    background-color: white;
+    font-size: 1.4rem;
+    display: flex;
+    flex-direction: column;
+}
+.criacao-img{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.criacao-img-add{
+    border: 2px solid var(--blueColor);
+    width: 300px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.criacao-img-add button{
+    background-color: var(--blueColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 25px;
+    border-radius: 100px;
+}
+@media (pointer: fine){
+    .criacao-img-add button:hover{
+        cursor: pointer;
+        transition: all 0.2s;
+        background-color: var(--redColor);
+    }
+}
+.criacao-dados{
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+}
+.criacao-dados section{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.criacao-dados section:nth-child(1){
+    width: 54%;
+}
+.criacao-dados section:nth-child(2){
+    width: 44%;
+}
+.criacao-dados h2{
+    font-size: 1.6rem;
+    color: var(--blueColor);
+    margin: 0 0 20px 0;
+}
+.criacao-dados input[type=text],
+.criacao-dados input[type=number],
+.criacao-dados select{
+    background-color: #F5F5F5;
+    border: 1px solid #d4d4d4;
+    outline: 1px solid white;
+    border-radius: 7px;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+.criacao-dados input[type=text]:focus,
+.criacao-dados input[type=number]:focus,
+.criacao-dados select:focus{
+    border: 1px solid #0060DF;
+    outline: 1px solid #0060DF;
+}
+.criacao-dados textarea{
+    resize: none;
+    width: 100%;
+    height: 300px;
+    background-color: #F5F5F5;
+    border: 1px solid #d4d4d4;
+    border-radius: 7px;
+    padding: 7px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3rem;
+
+}
+.criacao-contato button{
+    width: fit-content;
+    height: fit-content;
+    padding: 6px 30px 0 30px;
+    margin: 0;
+    background-color: var(--blueColor);
+    border-radius: 5px;
+}
+@media (pointer: fine){
+    .criacao-contato button:hover{
+        cursor: pointer;
+        transition: all 0.2s;
+        background-color: var(--redColor);
+    }
+}
+.input-extras{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    gap: 2px;
+}
+.input-extras label{
+    width: fit-content;
+    display: flex;
+    gap: 10px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: transparent;
+    border-radius: 100px;
+    padding: 5px 13px;
+    user-select: none;
+}
+@media (pointer: fine){
+    .input-extras label:hover{
+        cursor: pointer;
+        border-color: rgba(21, 67, 96, 0.5);
+        color: rgba(21, 67, 96, 0.5);
+    }
+}
+.input-extras input:checked + label{
+    border-color: #154360;
+    color: #154360;
+}
+.submit-button{
+    align-self: center;
+    color: white;
+    background-color: var(--blueColor);
+    padding: 7px 25px;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+@media (pointer: fine){
+    .submit-button:hover{
+        cursor: pointer;
+        transition: all 0.2s;
+        background-color: var(--redColor);
+    }
+}
+/* Fixes  */
+/* Number Inputs Button */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+body:after{
+    position:absolute;
+    width:0;
+    height:0;
+    overflow:hidden;
+    z-index:-1;
+    content: url(img/AnimalsBlue.png) 
+             url(img/LeisureBlue.png) 
+             url(img/DinnerBlue.png) 
+             url(img/WifiBlue.png)
+             url(img/ParkingBlue.png);
+}
+
+@media only screen and (max-width: 992px) {
+    .criacao-dados{
+        flex-direction: column;
+        justify-content: unset;
+    }
+    .criacao-contato{
+        border-top: 2px solid rgba(0, 0, 0, 0.1);
+    }
+    .criacao-dados section:nth-child(1),.criacao-dados section:nth-child(2){
+        width: 100%;
+    }
+    .submit-button{
+        margin-top: 30px;
+    }
+}
