@@ -104,6 +104,14 @@ body,.header-main {
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
 }
+body:after{
+    position:absolute;
+    width:0;
+    height:0;
+    overflow:hidden;
+    z-index:-1;
+    content: url(img/favoritoRed.png);
+}
 
 /* Break Points: 600px 601px 768px 992px 1200px */
 
